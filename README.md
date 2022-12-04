@@ -20,10 +20,11 @@ Utilizando tecnologías como:
 - Git
 > El usuario de está aplicación puede interactuar agregando y/o quitando productos en un carrito, eligiendo una cantidad determinada dependiendo de si un producto cuenta con stock disponible suficiente, navegar a través de filtrados por categoría pudiendo elegir con más precisión, contar con una breve descripción del mismo antes de agregarlo al carrito y por último experimentar la "compra" final en la cual deberá proporcionar algo de información para poder completarla.
 
-***
 ```
 NOTA: No está apta para resoluciones de teléfonos moviles o parecidas.
 ```
+***
+
 ### Dependencias
 | Librería | Versión |
 | ------ | ------ |
