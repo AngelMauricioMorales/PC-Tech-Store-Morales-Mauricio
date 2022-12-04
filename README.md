@@ -38,4 +38,6 @@ NOTA: No está apta para resoluciones de teléfonos moviles o parecidas.
 | Sweetalert | 2.1.2 |
 | web-vitals | 2.1.4 |
 
+***
+
 **Mauricio Ángel Morales🤘**
