@@ -1,6 +1,3 @@
-
-
-
 # Proyecto e-commerce de Coder House
 ***
 ### Link al sitio:

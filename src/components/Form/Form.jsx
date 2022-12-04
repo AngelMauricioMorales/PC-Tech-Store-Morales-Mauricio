@@ -5,7 +5,6 @@ function Form({inputsHandler, formData, createOrder}) {
 	const [switchBoolean, setswitchBoolean] = useState(true);
 
 	const userData = formData.userPhone !== "" && formData.userName !== "" && formData.userEmail !== "";
-	const emailRegExp = new RegExp('[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+');
 
 	useEffect(() => {
         if (userData) {
@@ -34,7 +33,7 @@ function Form({inputsHandler, formData, createOrder}) {
     		  	<input	id="userEmail"
     		    		name="userEmail"
     		    		type="email"
-    		    		pattern={emailRegExp}
+    		    		pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
     		    		placeholder="Ej: user_email@myemail.com"
     		    		onChange={inputsHandler}
     		    		value={formData.userEmail}
