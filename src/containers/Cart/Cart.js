@@ -21,7 +21,7 @@ function Cart() {
                 </ul>
                 <div className="clearBuyBtnsContainer">
                     <p className="cartTotalPrice">
-                        Total: <span className="cartTotalPriceSpan">{totalPrice()}u$d</span>
+                        Total: <span className="cartTotalPriceSpan">{parseFloat(totalPrice()).toFixed(2)}u$d</span>
                     </p>
                     <div className="cartClarBuyBtnsSubContainer">
                         <button className="cartClearBtn" onClick={clearCart}>Vaciar carrito</button>

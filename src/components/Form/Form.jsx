@@ -4,7 +4,10 @@ import {Link} from 'react-router-dom';
 function Form({inputsHandler, formData, createOrder}) {
 	const [switchBoolean, setswitchBoolean] = useState(true);
 
-	const userData = formData.userPhone !== "" && formData.userName !== "" && formData.userEmail !== "";
+	const userData = 	formData.userPhone !== "" && 
+					 	formData.userName !== "" && 
+					 	formData.userEmail !== "" && 
+					 	formData.userEmailRepeated === formData.userEmail;
 
 	useEffect(() => {
         if (userData) {
@@ -17,7 +20,7 @@ function Form({inputsHandler, formData, createOrder}) {
   	return (
 		<div className="formBackdrop">
     		<form onSubmit={Form} className="form">
-				<h2>Completa el formulario</h2>
+				<h2 className={userData ? null : "incompleteForm"}>Completa el formulario</h2>
     		  	<label 	htmlFor="userName">Nombre</label>
     		  	<input	id="userName"
     		  	  		name="userName"
@@ -37,6 +40,15 @@ function Form({inputsHandler, formData, createOrder}) {
     		    		placeholder="Ej: user_email@myemail.com"
     		    		onChange={inputsHandler}
     		    		value={formData.userEmail}
+    		    		required
+    		  	/>
+				<label 	htmlFor="userEmailRepeated">Repita el email</label>
+    		  	<input	id="userEmailRepeated"
+    		    		name="userEmailRepeated"
+    		    		type="email"
+    		    		pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
+    		    		onChange={inputsHandler}
+    		    		value={formData.userEmailRepeated}
     		    		required
     		  	/>
     		  	<label 	htmlFor="userPhone">Teléfono</label>

@@ -11,7 +11,7 @@ const Item = memo(({product}) => {
                 </div>
                 <div className="itemListFooter">
                     <p className="itemListPrice">
-                        Precio: <span className="itemListMoney">{product.price}u$d</span>
+                        Precio: <span className="itemListMoney">{parseFloat(product.price).toFixed(2)}u$d</span>
                     </p>	
                     <Link to={`/detail/${product.id}`}>
                         <button type="button">

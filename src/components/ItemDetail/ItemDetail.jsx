@@ -26,7 +26,7 @@ function ItemDetail({item}) {
                 <div className="detailFooter">
                     <p className="detailFooterPrice">
 		            	<span className="detailFooterPriceSpan">Precio:</span>
-                        <span className="detailFooterPriceNumber">{item.price}u$d</span>
+                        <span className="detailFooterPriceNumber">{parseFloat(item.price).toFixed(2)}u$d</span>
 		            </p>	
                     <p className="detailFooterStock">
                         <span className="detailFooterStockSpan">Stock disponible:</span> 

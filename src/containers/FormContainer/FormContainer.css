@@ -30,6 +30,7 @@ label[for] {
 
 #userName,
 #userEmail,
+#userEmailRepeated,
 #userPhone,
 input[name="userEmailRepeat"] {
     font-size: 1.1rem;
@@ -90,4 +91,18 @@ fieldset {
 
 .formBuyBtn:disabled {
     visibility: hidden;
+}
+
+@keyframes incompleteForm {
+    from {
+        color: black;
+    }
+    to {
+        color: red;
+        text-decoration: underline;
+    }
+  }
+
+.incompleteForm {
+    animation: incompleteForm 1s infinite ease-in-out;
 }
