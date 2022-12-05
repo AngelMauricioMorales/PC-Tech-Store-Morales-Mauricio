@@ -20,7 +20,7 @@ function Form({inputsHandler, formData, createOrder}) {
   	return (
 		<div className="formBackdrop">
     		<form onSubmit={Form} className="form">
-				<h2 className={userData ? null : "incompleteForm"}>Completa el formulario</h2>
+				<h2>Completa el formulario</h2>
     		  	<label 	htmlFor="userName">Nombre</label>
     		  	<input	id="userName"
     		  	  		name="userName"
