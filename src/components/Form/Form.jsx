@@ -4,18 +4,12 @@ import {Link} from 'react-router-dom';
 function Form({inputsHandler, formData, createOrder}) {
 	const [switchBoolean, setswitchBoolean] = useState(true);
 
-	const userData = 	formData.userPhone !== "" && 
-					 	formData.userName !== "" && 
-					 	formData.userEmail !== "" && 
-					 	formData.userEmailRepeated === formData.userEmail;
+	const userData = formData.userPhone !== "" && 
+					 formData.userName !== "" && 
+					 formData.userEmail !== "" && 
+					 formData.userEmailRepeated === formData.userEmail;
 
-	useEffect(() => {
-        if (userData) {
-            setswitchBoolean(false);
-        } else {
-			setswitchBoolean(true);
-		}
-    }, [userData]);
+	useEffect(() => userData ? setswitchBoolean(false) : setswitchBoolean(true), [userData]);
 
   	return (
 		<div className="formBackdrop">

@@ -36,7 +36,7 @@ function ItemDetail({item}) {
                         {
                             counter   
                             ?   
-                            <ItemCount stock={item.stock} 
+                            <ItemCount  stock={item.stock} 
                                         initial={1} 
                                         addQuantity={addToCart} />  
                             :   

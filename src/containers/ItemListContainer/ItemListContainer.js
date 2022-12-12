@@ -21,11 +21,15 @@ function ItemListContainer() {
 			.finally(() => setLoading(false)) 
     }, [itemCategory]);
 
-  	return loading 	? 	(<p id="loading">Cargando...</p>) 	: 	(	
-																	<ul className="itemList">
-																		<ItemList products={products} />
-																	</ul>
-  																);
+  	return (
+		loading 	
+		? 	
+		(<p id="loading">Cargando...</p>) 	
+		: 	
+		<ul className="itemList">
+			<ItemList products={products} />
+		</ul>
+	)
 };
 
 export default ItemListContainer;
