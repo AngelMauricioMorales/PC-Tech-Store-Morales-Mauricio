@@ -1,64 +1,48 @@
 import {NavLink} from 'react-router-dom';
-import {useCartContext} from '../../contexts/CartContext/CartContext';
-import Title from '../Title/Title';
-import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css';
 
-function Navbar () {
-    const {amountQuantity} = useCartContext();
-
-    return  <nav className="navbar">
-                <ul>
-                    <li>
-                        <NavLink to="/" className="NavLink">
-                            <Title />
+function Navbar ({menu}) {
+    return  <nav className={menu ? "showNavbar" : "hideNavbar"}>
+                <ul className="navbarList">
+                    <li className="navbarListItem">
+                        <NavLink to="/category/cases" className="navbarLink">
+                            GABINETES
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/cases" className="NavLink">
-                            Gabinetes
+                    <li className="navbarListItem">
+                        <NavLink to="/category/peripherals" className="navbarLink">
+                            PERIFÉRICOS
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/peripherals" className="NavLink">
-                            Periféricos
+                    <li className="navbarListItem">
+                        <NavLink to="/category/power-banks" className="navbarLink">
+                            FUENTES
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/power-banks" className="NavLink">
-                            Fuentes
+                    <li className="navbarListItem">
+                        <NavLink to="/category/cpus" className="navbarLink">
+                            PROCESADORES
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/cpus" className="NavLink">
-                            Procesadores
+                    <li className="navbarListItem">
+                        <NavLink to="/category/gpus" className="navbarLink">
+                            GRÁFICOS
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/gpus" className="NavLink">
-                            Gráficos
+                    <li className="navbarListItem">
+                        <NavLink to="/category/motherboards" className="navbarLink">
+                            PLACAS BASE
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/motherboards" className="NavLink">
-                            Placas Base
+                    <li className="navbarListItem">
+                        <NavLink to="/category/storages" className="navbarLink">
+                            ALMACENAMIENTO
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/category/storages" className="NavLink">
-                            Almacenamiento
+                    <li className="navbarListItem">
+                        <NavLink to="/category/cooling" className="navbarLink">
+                            REFRIGERACIÓN
                         </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/category/cooling" className="NavLink">
-                            Refrigeración
-                        </NavLink>
-                    </li>
-                    <li className="NavLinkCart">
-                        <NavLink to="/cart" className="NavLink">
-                            <CartWidget />
-                        </NavLink>
-                        <span className="cartQuantity">{amountQuantity() !== 0 && amountQuantity()}</span>
                     </li>
                 </ul>
             </nav>

@@ -1,0 +1,36 @@
+.itemListProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--primaryDark-var) 2px 2px;
+    border: 1px solid var(--primaryDark-var);
+    border-radius: 2px;
+    list-style: none;
+    font-size: 0.5rem;
+    padding: 1%;
+    margin: 2% 0;
+    width: 44%;
+}
+
+.itemListProductFigure {
+    height: 7rem;
+}
+
+.itemListProductFigure img {
+    margin: auto;
+    height: 100%;
+}
+
+.itemListFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+.itemListFooterMoney {
+    color: var(--dollarColor-var);
+}

@@ -19,13 +19,13 @@ function Cart() {
                 <ul className="cartList">
                     <CartList cartList={cartList} />
                 </ul>
-                <div className="clearBuyBtnsContainer">
-                    <p className="cartTotalPrice">
-                        Total: <span className="cartTotalPriceSpan">{parseFloat(totalPrice()).toFixed(2)}u$d</span>
+                <div className="cartFooter">
+                    <p className="cartFooterPrice">
+                        Total: <span className="cartFooterTotalPrice">{parseFloat(totalPrice()).toFixed(2)}u$d</span>
                     </p>
-                    <div className="cartClarBuyBtnsSubContainer">
-                        <button className="cartClearBtn" onClick={clearCart}>Vaciar carrito</button>
-                        <Link to="/form" className="cartContinueLink">Continuar</Link>
+                    <div className="cartFooterBtns">
+                        <button className="cartFooterClearBtn" onClick={clearCart}>Vaciar carrito</button>
+                        <Link to="/form" className="cartFooterContinueLink">Continuar</Link>
                     </div>
                 </div>
             </div>

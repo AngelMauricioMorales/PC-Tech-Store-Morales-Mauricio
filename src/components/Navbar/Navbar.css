@@ -1,34 +1,35 @@
-.navbar {
-    width: 100%;
-    padding: 0 1%;
-    font-weight: bolder;
-    background-color: black;
-    position: fixed;
+.hideNavbar {
+    display: none;
 }
 
-.navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbarList {
+    padding: 10% 0;
     list-style: none;
-    width: 95%;
+    background-color: var(--primaryWhite-var);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.NavLink {
-    color: #bab5ab;
+.navbarListItem {
+    margin: 5% 0;
+    padding: 1% 0;
+    border: 1px solid var(--primaryDark-var);
+    text-align: center;
+}
+
+.navbarLink {
     text-decoration: none;
+    color: var(--primaryDark-var);
+    font-weight: bold;
+    padding: 2% 35%;
 }
 
-.NavLink:hover {
-    color: #ffffffcb;
-    text-decoration: underline;
-}
-
-.NavLinkCart {
-    display: flex;
-    align-items: center;
-}
-
-.cartQuantity {
-    color: #bab5ab;
+.showNavbar {
+    display: block;
+    position: absolute;
+    background-color: var(--backdropsTransparent-var);
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 11%;
 }

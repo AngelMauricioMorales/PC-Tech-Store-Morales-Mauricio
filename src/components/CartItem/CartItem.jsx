@@ -1,12 +1,13 @@
 import {useCartContext} from '../../contexts/CartContext/CartContext';
+import "./CartItem.css";
 
 function CartItem({product}) {
     const {removeItem} = useCartContext();
 
     return  <li key={product.id} className="cartListItem">
-                <div className="cartListBody">
-                    <h3 className="cartListItemName">{product.name}</h3>
-                    <button className="cartListItemRemoveBtn" onClick={() => removeItem(product.id)}>X</button>
+                <div className="cartListItemHeader">
+                    <h3 className="cartListItemHeaderTitle">{product.name}</h3>
+                    <button className="cartListIItemHeaderBtn" onClick={() => removeItem(product.id)}>X</button>
                 </div>
                 <figure className="cartListItemFigure">
                     <img src={product.image} alt={product.description} />

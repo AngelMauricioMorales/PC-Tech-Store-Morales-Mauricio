@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
+import "./Form.css";
 
 function Form({inputsHandler, formData, createOrder}) {
 	const [switchBoolean, setswitchBoolean] = useState(true);
@@ -14,7 +15,7 @@ function Form({inputsHandler, formData, createOrder}) {
   	return (
 		<div className="formBackdrop">
     		<form onSubmit={Form} className="form">
-				<h2>Completa el formulario</h2>
+				<h2 className="formTitle">Completa el formulario</h2>
     		  	<label 	htmlFor="userName">Nombre</label>
     		  	<input	id="userName"
     		  	  		name="userName"

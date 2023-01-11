@@ -1,0 +1,24 @@
+.itemCountContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1% auto;
+    width: 50%;
+}
+
+.itemCountBtns {
+    margin: 2% 0;
+}
+
+.itemCountQuantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemCountQuantityNumber {
+    border: 1px solid var(--primaryDark-var);
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 1% 3%;
+}

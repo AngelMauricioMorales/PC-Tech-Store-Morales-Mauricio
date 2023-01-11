@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {useCartContext} from '../../contexts/CartContext/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
+import "./ItemDetail.css";
 
 function ItemDetail({item}) {
     const [counter, setCounter] = useState(true);
@@ -42,7 +43,7 @@ function ItemDetail({item}) {
                             :   
                             <div className="endOrContinueContainer">
                                 <Link to="/cart" className="endOrContinueLinks">Finalizar compra</Link>
-                                <Link to="/" className="endOrContinueLinks">Seguir Comprando</Link>
+                                <Link to="/" className="endOrContinueLinks">Seguir comprando</Link>
                             </div>
                         }
                     </div>

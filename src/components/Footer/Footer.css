@@ -1,0 +1,36 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "data contact";
+    align-items: center;
+    color: var(--primaryWhite-var);
+    background-color: var(--primaryDark-var);
+    padding: 0 5%;
+    font-size: 0.5rem;
+}
+
+.footerDataList {
+    grid: data;
+    list-style: none;
+}
+
+.footerDataListItemSpan {
+    text-decoration: underline;
+}
+
+
+.footerContactsList {
+    grid: contact;
+    display: flex;
+    list-style: none;
+}
+
+.footerContactsListItem {
+    width: 100%;
+}
+
+.footerContactListItemLink img {
+    height: 1rem;
+    margin: auto;
+    border-radius: 5px;
+}

@@ -1,0 +1,83 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primaryWhite-var);
+    border-radius: 5px;
+    text-align: start;
+    padding: 1%;
+    width: 100vw;
+    height: 70vh;
+}
+
+.formTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+label[for] {
+    margin-top: 10%;
+}
+
+#userName,
+#userEmail,
+#userEmailRepeated,
+#userPhone,
+input[name="userEmailRepeat"] {
+    border-radius: 5px;
+    padding: 1%;
+}
+
+input[name="userEmailRepeat"] {
+    margin-top: 1%;
+}
+  
+input:required {
+    border: 1.5px solid red;
+    border-radius: 5px;
+}
+  
+input:valid {
+    border: 1.5px solid var(--dollarColor-var);
+    border-radius: 5px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin: 10% 0 5% 0;
+}
+
+.cancelLink {
+    border: 1px solid var(--primaryDark-var);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 5%;
+    color: #000000;
+}
+
+.formBuyBtn {
+    border: 1px solid var(--primaryDark-var);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.formBuyLink {
+    text-decoration: none;
+    color: var(--primaryDark-var);
+    padding: 5.5% 0;
+}
+
+.formBuyBtn:hover,
+.formBuyLink:hover,
+.cancelLink:hover {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
+}
+
+.formBuyBtn:disabled {
+    visibility: hidden;
+}

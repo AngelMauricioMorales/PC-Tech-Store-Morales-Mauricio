@@ -5,7 +5,7 @@ import ItemList from '../../components/ItemList/ItemList';
 import './ItemListContainer.css'; 
 
 function ItemListContainer() {
-  	const [loading, setLoading] = useState(true);
+  	const [isLoading, setisLoading] = useState(true);
   	const [products, setProducts] = useState([]);
 
 	const {itemCategory} = useParams();
@@ -18,17 +18,19 @@ function ItemListContainer() {
 		getDocs(queryFilter)
 			.then(resp => setProducts(resp.docs.map(item => ({id: item.id, ...item.data()}))))
 			.catch(err => console.log(err))
-			.finally(() => setLoading(false)) 
+			.finally(() => setisLoading(false)) 
     }, [itemCategory]);
 
   	return (
-		loading 	
+		isLoading 	
 		? 	
-		(<p id="loading">Cargando...</p>) 	
-		: 	
-		<ul className="itemList">
-			<ItemList products={products} />
-		</ul>
+		(<p id="isLoading">Cargando...</p>) 	
+		:
+		<section className="itemsListSection">
+			<ul className="itemsList">
+				<ItemList products={products} />
+			</ul>
+		</section> 	
 	)
 };
 

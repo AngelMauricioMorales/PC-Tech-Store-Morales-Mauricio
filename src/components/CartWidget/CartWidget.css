@@ -1,4 +1,15 @@
-.CartWidgetLink img {
-    height: 30px;
-    width: 30px;
+.cartWidgetLink {
+    grid: cart;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.cartWidgetImg {
+    width: 50%;
+}
+
+.cartWidgetNumber {
+    color: var(--primaryWhite-var);
 }
