@@ -6,7 +6,7 @@
     color: var(--primaryWhite-var);
     background-color: var(--primaryDark-var);
     padding: 0 5%;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .footerDataList {
@@ -17,7 +17,6 @@
 .footerDataListItemSpan {
     text-decoration: underline;
 }
-
 
 .footerContactsList {
     grid: contact;

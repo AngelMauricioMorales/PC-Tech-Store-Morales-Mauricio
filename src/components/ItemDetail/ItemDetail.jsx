@@ -30,7 +30,7 @@ function ItemDetail({item}) {
                         <span className="detailFooterPriceNumber">{parseFloat(item.price).toFixed(2)}u$d</span>
 		            </p>	
                     <p className="detailFooterStock">
-                        <span className="detailFooterStockSpan">Stock disponible:</span> 
+                        <span className="detailFooterStockSpan">Stock:</span> 
                         <span className="detailFooterStockNumber">{item.stock === 0 ? "Agotado" : item.stock}</span>
                     </p>
                     <div className="detailCountContainer">

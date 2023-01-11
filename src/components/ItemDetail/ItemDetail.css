@@ -1,5 +1,5 @@
 .detailContainer {
-    height: 64vh;
+    height: 80vh;
     margin: 5%;
 }
 
@@ -7,6 +7,11 @@
     border-top: 1px solid var(--primaryDark-var);
     border-bottom: 1px solid var(--primaryDark-var);
     padding: 2% 0;
+}
+
+.detailItemFigure img {
+    width: 70%;
+    margin: auto;
 }
 
 .detailFooter {
@@ -20,7 +25,7 @@
 .detailFooterStock {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 90%;
     margin: 2% auto;
     text-align: start;
 }
@@ -32,8 +37,6 @@
 
 .detailFooterPriceNumber { 
     color: var(--dollarColor-var);
-    border: 1px solid var(--dollarColor-var);
-    border-radius: 2px;
     font-weight: bold;
     padding: 0 1%;
 }
@@ -45,9 +48,10 @@
     padding: 1% 3%;
 }
 
-.endOrContinueContainer {
-    text-align: center;
-    margin: 10% 0;
+.detailCountContainer {
+    border-top: 1px solid var(--primaryDark-var);
+    font-size: 0.85rem;
+    padding: 5% 0;
 }
 
 .endOrContinueLinks {
@@ -55,6 +59,4 @@
     border: 1px solid var(--primaryDark-var);
     color: var(--primaryDark-var);
     border-radius: 3px;
-    padding: 1%;
-    margin: 3%;
 }
