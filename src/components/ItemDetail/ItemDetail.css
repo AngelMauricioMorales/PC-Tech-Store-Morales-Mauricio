@@ -1,5 +1,5 @@
 .detailContainer {
-    height: 80vh;
+    height: auto;
     margin: 5%;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .detailItemFigure img {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -54,9 +54,15 @@
     padding: 5% 0;
 }
 
+.endOrContinueContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .endOrContinueLinks {
     text-decoration: none;
     border: 1px solid var(--primaryDark-var);
     color: var(--primaryDark-var);
     border-radius: 3px;
+    padding: 1%;
 }
