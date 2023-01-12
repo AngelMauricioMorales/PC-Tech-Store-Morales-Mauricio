@@ -6,19 +6,15 @@
     border: 1px solid var(--primaryDark-var);
     border-radius: 2px;
     list-style: none;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding: 1%;
     margin: 2% 0;
     width: 44%;
 }
 
-.itemListProductFigure {
-    height: 7rem;
-}
-
-.itemListProductFigure img {
+.itemListProductImg img {
     margin: auto;
-    height: 100%;
+    height: 15vh;
 }
 
 .itemListFooter {
@@ -33,4 +29,8 @@
 
 .itemListFooterMoney {
     color: var(--dollarColor-var);
+}
+
+@media screen and (min-width: 375px) {
+
 }

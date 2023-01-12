@@ -9,8 +9,12 @@
     padding: 2% 0;
 }
 
+.detailItemTitle {
+    font-weight: bold;
+}
+
 .detailItemFigure img {
-    width: 75%;
+    height: 25vh;
     margin: auto;
 }
 

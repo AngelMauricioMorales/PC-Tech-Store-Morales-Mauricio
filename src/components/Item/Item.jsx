@@ -6,17 +6,14 @@ const Item = memo(({product}) => {
     return <li className="itemListProduct">
                 <div className="itemListProductHeader">
                     <h2 className="itemListProductTitle">{product.name}</h2>
-                    <figure className="itemListProductFigure">
-                        <img src={product.image} alt={product.description} />
-                    </figure>
+                    <Link to={`/detail/${product.id}`} className="itemListProductImg">
+                        <img src={product.image} alt={product.description} />                                                                                    
+                    </Link> 	
                 </div>
                 <div className="itemListFooter">
                     <p className="itemListFooterPrice">
                         Precio: <span className="itemListFooterMoney">{parseFloat(product.price).toFixed(2)}u$d</span>
                     </p>	
-                    <Link to={`/detail/${product.id}`} className="itemListFooterInfoLink">
-                        <button className="itemListFooterInfoBtn" type="button">+ INFO</button>                                                                                                                  
-                    </Link> 	
                 </div>
             </li>
 });
