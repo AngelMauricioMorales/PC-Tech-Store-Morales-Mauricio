@@ -61,7 +61,6 @@ fieldset {
 .formBuyBtn {
     border: 1px solid var(--primaryDark-var);
     border-radius: 5px;
-    font-weight: bold;
     padding: 1%;
 }
 

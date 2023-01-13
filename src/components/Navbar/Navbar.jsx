@@ -31,7 +31,7 @@ function Navbar ({menu}) {
                     </li>
                     <li className="navbarListItem">
                         <NavLink to="/category/motherboards" className="navbarLink">
-                            PLACAS BASE
+                            MOTHERBOARDS
                         </NavLink>
                     </li>
                     <li className="navbarListItem">

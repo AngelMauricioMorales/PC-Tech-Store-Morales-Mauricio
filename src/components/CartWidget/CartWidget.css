@@ -13,3 +13,11 @@
 .cartWidgetNumber {
     color: var(--primaryWhite-var);
 }
+
+@media screen and (min-width: 768px) {
+    .cartWidgetImg,
+    .cartWidgetNumber {
+        width: inherit;
+        font-size: 1.5rem;
+    }
+}

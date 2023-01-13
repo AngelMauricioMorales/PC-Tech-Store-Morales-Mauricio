@@ -41,3 +41,13 @@
     background-color: var(--primaryDark-var);
     color: var(--primaryWhite-var);
 }
+
+@media screen and (min-width: 768px) {
+    .cartListItem {
+        width: 30%;
+    }
+
+    .cartListItemFigure {
+        height: 7rem;
+    }
+}
