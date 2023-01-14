@@ -53,6 +53,12 @@
     padding: 0 3%;
 }
 
+.cartFooterClearBtn {
+    border: 1px solid var(--primaryDark-var);
+    border-radius: 2px;
+    padding: 0 1%;
+}
+
 @media screen and (min-width: 768px) {
     .cartListContainer {
         min-height: 55vh;

@@ -4,7 +4,7 @@ import ItemDetailContainer from '../containers/ItemDetailContainer/ItemDetailCon
 import CartContextProvider from '../contexts/CartContext/CartContext';
 import FormContainer from '../containers/FormContainer/FormContainer';
 import Cart from '../containers/Cart/Cart';
-import Header from '../components/Header/Header';
+import Header from '../containers/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
 

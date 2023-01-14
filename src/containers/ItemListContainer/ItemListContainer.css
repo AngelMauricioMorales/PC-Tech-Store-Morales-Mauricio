@@ -10,6 +10,5 @@
 .itemsList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-between;
+    justify-content: center;
 }

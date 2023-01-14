@@ -14,10 +14,32 @@
     color: var(--primaryWhite-var);
 }
 
+@media screen and (min-width: 375px) {
+    .cartWidgetImg,
+    .cartWidgetNumber {
+        width: 70%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .cartWidgetImg,
     .cartWidgetNumber {
         width: inherit;
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cartWidgetImg,
+    .cartWidgetNumber {
+        width: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cartWidgetImg,
+    .cartWidgetNumber {
+        width: 2rem;
     }
 }

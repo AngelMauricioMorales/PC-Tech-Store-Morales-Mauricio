@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar ({menu}) {
-    return  <nav className={menu ? "showNavbar" : "hideNavbar"}>
+    return  <nav className={menu ? "showNavbar" : "navbar"}>
                 <ul className="navbarList">
                     <li className="navbarListItem">
                         <NavLink to="/category/cases" className="navbarLink">

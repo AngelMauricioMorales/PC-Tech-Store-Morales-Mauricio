@@ -4,17 +4,15 @@ import "./Item.css";
 
 const Item = memo(({product}) => {
     return <li className="itemListProduct">
-                <div className="itemListProductHeader">
-                    <h2 className="itemListProductTitle">{product.name}</h2>
-                    <Link to={`/detail/${product.id}`} className="itemListProductImg">
+                <Link to={`/detail/${product.id}`} className="card">
+                    <h2 className="cardTitle">{product.name}</h2>
+                    <figure className="cardImg">
                         <img src={product.image} alt={product.description} />                                                                                    
-                    </Link> 	
-                </div>
-                <div className="itemListFooter">
-                    <p className="itemListFooterPrice">
-                        Precio: <span className="itemListFooterMoney">{parseFloat(product.price).toFixed(2)}u$d</span>
+                    </figure> 	
+                    <p className="cardPrice">
+                        Precio: <span className="cardMoney">{parseFloat(product.price).toFixed(2)}u$d</span>
                     </p>	
-                </div>
+                </Link>
             </li>
 });
 

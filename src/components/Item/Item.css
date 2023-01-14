@@ -1,37 +1,44 @@
 .itemListProduct {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: var(--primaryDark-var) 2px 2px;
     border: 1px solid var(--primaryDark-var);
     border-radius: 2px;
+    box-shadow: 2px 2px var(--primaryDark-var);
     list-style: none;
     font-size: 0.7rem;
     padding: 1%;
-    margin: 2% 0;
+    margin: 2%;
     width: 44%;
+    height: 25vh;
 }
 
-.itemListProductImg img {
-    margin: auto;
-    height: 15vh;
+.card {
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: "title"
+                         "image"
+                         "price";
+    text-decoration: none;
+    color: var(--primaryDark-var);
+    height: 100%;
 }
 
-.itemListFooter {
-    display: flex;
-    justify-content: space-between;
+.cardTitle {
+    grid: title;
+}
+
+.cardImg img {
+    grid: image;
+    height: 100%;
+    width: 100%;
+}
+
+.cardPrice {
+    grid: price;
     background-color: var(--primaryDark-var);
     color: var(--primaryWhite-var);
-    text-align: center;
     font-weight: bold;
+    text-align: center;
 }
 
-.itemListFooterMoney {
+.cardMoney {
     color: var(--dollarColor-var);
-}
-
-@media screen and (min-width: 375px) {
-    .itemListProduct {
-        font-size: inherit;
-    }
 }

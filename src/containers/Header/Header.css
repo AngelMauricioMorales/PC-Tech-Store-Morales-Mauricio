@@ -33,3 +33,15 @@
         min-width: 20%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .header {
+        grid-template-columns: 0.25fr 2fr 0.25fr;
+        padding: 0.5%;
+        width: 100%;
+    }
+
+    .burgerButton {
+        display: none;
+    }
+}

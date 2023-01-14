@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import CartWidget from '../CartWidget/CartWidget';
-import Navbar from '../Navbar/Navbar';
-import Title from '../Title/Title';
+import CartWidget from '../../components/CartWidget/CartWidget';
+import Navbar from '../../components/Navbar/Navbar';
+import Title from '../../components/Title/Title';
 import './Header.css';
 
 function Header() {
