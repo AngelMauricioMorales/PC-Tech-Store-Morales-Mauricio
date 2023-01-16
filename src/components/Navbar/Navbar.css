@@ -20,7 +20,6 @@
 .navbarLink {
     text-decoration: none;
     color: var(--primaryDark-var);
-    font-weight: bold;
 }
 
 .showNavbar {
@@ -55,7 +54,6 @@
 
     .navbarLink {
         color: var(--primaryWhite-var);
-        font-size: 0.8rem;
         font-weight: normal;
     }
 }

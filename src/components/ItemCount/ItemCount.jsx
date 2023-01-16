@@ -13,7 +13,7 @@ function ItemCount({stock, initial, addQuantity}) {
   	return	<div className="itemCountContainer">
       			<button className="itemCountBtns" type="button" onClick={sum}>+</button>
       			<div className="itemCountQuantity">
-        			¿Cuántos llevas?: <span className="itemCountQuantityNumber">{quantity}</span>
+        			¿Cuantos llevas?: <span className="itemCountQuantityNumber">{quantity}</span>
       			</div>
       			<button className="itemCountBtns" type="button" onClick={substract}>-</button>
       			<button className="itemCountBtns itemCountBtns--addToCart" 

@@ -1,3 +1,10 @@
+@font-face {
+	font-family: Lazer Game Zone;
+	src: local("Lazer Game Zone"),
+	local("Lazer Game Zone"),
+	url(../public/LazerGameZone.ttf);
+  }
+
 *,
 *::before,
 *::after {
@@ -9,10 +16,10 @@
 
 body {
 	min-height: 100vh;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: "Lazer Game Zone", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 img, 
@@ -29,4 +36,11 @@ video {
 	--primaryWhite-var: #ffffff;
 	--dollarColor-var: #008000;
 	--backdropsTransparent-var: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 1rem;
+		max-width: 1200px;
+	}
 }

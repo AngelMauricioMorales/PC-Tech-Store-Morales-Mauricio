@@ -50,7 +50,7 @@ fieldset {
 }
 
 .cancelLink {
-    border: 1px solid var(--primaryDark-var);
+    border: 5px double var(--primaryDark-var);
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
@@ -59,7 +59,7 @@ fieldset {
 }
 
 .formBuyBtn {
-    border: 1px solid var(--primaryDark-var);
+    border: 5px double var(--primaryDark-var);
     border-radius: 5px;
     padding: 1%;
 }

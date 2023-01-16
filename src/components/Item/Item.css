@@ -42,3 +42,11 @@
 .cardMoney {
     color: var(--dollarColor-var);
 }
+
+@media screen and (min-width: 1024px) {
+    .itemListProduct {
+        font-size: inherit;
+        height: 30vh;
+        width: 20%;
+    }
+}

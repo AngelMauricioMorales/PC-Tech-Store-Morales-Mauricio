@@ -42,6 +42,7 @@ function ItemDetail({item}) {
                                         addQuantity={addToCart} />  
                             :   
                             <div className="endOrContinueContainer">
+                                <p className="endOrContinueText">¡Agregado!😉</p>
                                 <Link to="/cart" className="endOrContinueLinks">Finalizar compra</Link>
                                 <Link to="/" className="endOrContinueLinks">Seguir comprando</Link>
                             </div>

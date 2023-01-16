@@ -10,7 +10,7 @@
 
 .emptyCartbackToBuyLink {
     color: var(--primaryDark-var);
-    border: 1px solid var(--primaryDark-var);
+    border: 5px double var(--primaryDark-var);
     border-radius: 5px;
     text-decoration: none;
     margin: 5%;
@@ -23,13 +23,18 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding: 0 5% 5% 5%;
+    padding: 1% 4%;
     min-height: 68vh;
 }
 
 .cartFooter {
     border: 1px solid var(--primaryDark-var);
     border-radius: 3px;
+}
+
+.cartFooterPrice {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
     padding: 1%;
 }
 
@@ -48,13 +53,13 @@
     background-color: rgb(236, 236, 236);
     text-decoration: none;
     color: var(--primaryDark-var);
-    border: 1px solid var(--primaryDark-var);
+    border: 5px double var(--primaryDark-var);
     border-radius: 3px;
     padding: 0 3%;
 }
 
 .cartFooterClearBtn {
-    border: 1px solid var(--primaryDark-var);
+    border: 5px double var(--primaryDark-var);
     border-radius: 2px;
     padding: 0 1%;
 }
@@ -62,5 +67,11 @@
 @media screen and (min-width: 768px) {
     .cartListContainer {
         min-height: 55vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .emptyCartbackToBuyLink {
+        padding: 1%;
     }
 }

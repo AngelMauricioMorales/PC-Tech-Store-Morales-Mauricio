@@ -11,7 +11,7 @@ function Navbar ({menu}) {
                     </li>
                     <li className="navbarListItem">
                         <NavLink to="/category/peripherals" className="navbarLink">
-                            PERIFÉRICOS
+                            PERIFERICOS
                         </NavLink>
                     </li>
                     <li className="navbarListItem">
@@ -26,7 +26,7 @@ function Navbar ({menu}) {
                     </li>
                     <li className="navbarListItem">
                         <NavLink to="/category/gpus" className="navbarLink">
-                            GRÁFICOS
+                            GRAFICOS
                         </NavLink>
                     </li>
                     <li className="navbarListItem">
@@ -41,7 +41,7 @@ function Navbar ({menu}) {
                     </li>
                     <li className="navbarListItem">
                         <NavLink to="/category/cooling" className="navbarLink">
-                            REFRIGERACIÓN
+                            REFRIGERACION
                         </NavLink>
                     </li>
                 </ul>

@@ -14,7 +14,7 @@ function Footer() {
                         <span className="footerDataListItemSpan">Profesor</span>: Federico Osandón
                     </li>
                     <li className="footerDataListItem">
-                        <span className="footerDataListItemSpan">Comisión</span>: 34800
+                        <span className="footerDataListItemSpan">Comision</span>: 34800
                     </li>
                     <li className="footerDataListItem">
                         <span className="footerDataListItemSpan">Escuela</span>: Coder House

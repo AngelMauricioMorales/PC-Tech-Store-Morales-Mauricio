@@ -46,7 +46,7 @@ function Form({inputsHandler, formData, createOrder}) {
     		    		value={formData.userEmailRepeated}
     		    		required
     		  	/>
-    		  	<label 	htmlFor="userPhone">Teléfono</label>
+    		  	<label 	htmlFor="userPhone">Telefono</label>
     		  	<input	id="userPhone"
     		    		name="userPhone"
     		    		type="tel"
