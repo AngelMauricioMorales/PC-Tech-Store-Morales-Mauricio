@@ -54,7 +54,7 @@
 
 .endOrContinueText {
     width: 100%;
-    padding: 15.5% 0;
+    padding: 15% 0;
 }
 
 .endOrContinueLinks {
@@ -66,6 +66,7 @@
     font-size: 0.7rem;
 }
 
+/*Mediaqueries*/
 @media screen and (min-width: 390px) {
     .detailContainer {
         padding-bottom: 8%;
@@ -79,6 +80,10 @@
 
     .detailFooter {
         width: 50%;
+    }
+
+    .endOrContinueLinks {
+        font-size: 1rem;
     }
 }
 

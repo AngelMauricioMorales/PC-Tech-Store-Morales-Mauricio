@@ -33,10 +33,12 @@
 
 .cardPrice {
     grid: price;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primaryDark-var);
     color: var(--primaryWhite-var);
     font-weight: bold;
-    text-align: center;
 }
 
 .cardMoney {
