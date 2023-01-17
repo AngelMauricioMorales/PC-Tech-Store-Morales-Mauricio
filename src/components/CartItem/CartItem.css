@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-.cartListIItemHeaderBtn {
+.cartListIItemHeaderRemove {
     padding: 1% 3%;
     font-weight: bold;
 }

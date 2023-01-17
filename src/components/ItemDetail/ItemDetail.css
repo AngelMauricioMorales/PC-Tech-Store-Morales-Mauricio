@@ -54,16 +54,19 @@
 
 .endOrContinueText {
     width: 100%;
-    padding: 15% 0;
+    padding: 11% 0;
+    font-size: 1.5rem;
 }
 
 .endOrContinueLinks {
+    border-top: 8px outset rgb(97, 97, 97);
+    border-left: 8px outset rgb(97, 97, 97);
+    border-bottom: 8px outset var(--primaryDark-var);
+    border-right: 8px outset var(--primaryDark-var);
     text-decoration: none;
-    border: 5px double var(--primaryDark-var);
     color: var(--primaryDark-var);
-    border-radius: 3px;
-    padding: 1%;
     font-size: 0.7rem;
+    padding: 1%;
 }
 
 /*Mediaqueries*/
@@ -78,12 +81,17 @@
         padding: 0;
     }
 
-    .detailFooter {
-        width: 50%;
+    .endOrContinueContainer {
+        width: 70%;
+        margin: auto;
+    }
+
+    .endOrContinueText {
+        padding: 9% 0;
     }
 
     .endOrContinueLinks {
-        font-size: 1rem;
+        font-size: inherit;
     }
 }
 

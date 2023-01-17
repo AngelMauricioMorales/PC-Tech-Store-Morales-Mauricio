@@ -9,12 +9,14 @@
 }
 
 .emptyCartbackToBuyLink {
+    border-top: 8px outset rgb(97, 97, 97);
+    border-left: 8px outset rgb(97, 97, 97);
+    border-bottom: 8px outset var(--primaryDark-var);
+    border-right: 8px outset var(--primaryDark-var);
     color: var(--primaryDark-var);
-    border: 5px double var(--primaryDark-var);
-    border-radius: 5px;
     text-decoration: none;
     margin: 5%;
-    padding: 2%;
+    padding: 1%;
 }
 
 /*Carrito con productos*/
@@ -50,17 +52,17 @@
 }
 
 .cartFooterContinueLink {
-    background-color: rgb(236, 236, 236);
-    text-decoration: none;
+    border-top: 8px outset rgb(97, 97, 97);
+    border-left: 8px outset rgb(97, 97, 97);
+    border-bottom: 8px outset var(--primaryDark-var);
+    border-right: 8px outset var(--primaryDark-var);
     color: var(--primaryDark-var);
-    border: 5px double var(--primaryDark-var);
-    border-radius: 3px;
+    text-decoration: none;
     padding: 0 3%;
 }
 
 .cartFooterClearBtn {
-    border: 5px double var(--primaryDark-var);
-    border-radius: 2px;
+    border-width: 8px;
     padding: 0 1%;
 }
 

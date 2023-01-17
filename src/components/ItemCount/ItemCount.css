@@ -26,13 +26,22 @@
 }
 
 .itemCountBtns--addToCart {
-    border: 5px double var(--primaryDark-var);
+    border-width: 8px;
     font-size: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .itemCountContainer {
+        width: 30%;
+    }
+
+    .itemCountQuantity {
+        font-size: inherit;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .itemCountContainer {
-        width: 30%;
         padding: 1% 0;
     }
 }

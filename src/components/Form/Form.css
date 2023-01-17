@@ -11,8 +11,10 @@
 }
 
 .formTitle {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
     text-align: center;
-    font-weight: bold;
+    padding: 1%;
 }
 
 label[for] {
@@ -50,8 +52,10 @@ fieldset {
 }
 
 .cancelLink {
-    border: 5px double var(--primaryDark-var);
-    border-radius: 5px;
+    border-top: 8px outset rgb(97, 97, 97);
+    border-left: 8px outset rgb(97, 97, 97);
+    border-bottom: 8px outset var(--primaryDark-var);
+    border-right: 8px outset var(--primaryDark-var);
     text-decoration: none;
     text-align: center;
     padding: 1% 5%;
@@ -59,8 +63,10 @@ fieldset {
 }
 
 .formBuyBtn {
-    border: 5px double var(--primaryDark-var);
-    border-radius: 5px;
+    border-top: 8px outset rgb(97, 97, 97);
+    border-left: 8px outset rgb(97, 97, 97);
+    border-bottom: 8px outset var(--primaryDark-var);
+    border-right: 8px outset var(--primaryDark-var);
     padding: 1%;
 }
 
