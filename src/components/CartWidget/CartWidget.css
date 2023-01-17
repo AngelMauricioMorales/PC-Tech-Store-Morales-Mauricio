@@ -12,6 +12,7 @@
 
 .cartWidgetNumber {
     color: var(--primaryWhite-var);
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 375px) {

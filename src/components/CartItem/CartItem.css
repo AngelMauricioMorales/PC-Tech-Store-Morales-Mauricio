@@ -27,6 +27,11 @@
     padding: 1% 3%;
 }
 
+.cartListIItemHeaderRemove:hover {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
+}
+
 .cartListItemFigure {
     height: 5rem;
     margin: auto;

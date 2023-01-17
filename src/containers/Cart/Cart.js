@@ -23,7 +23,7 @@ function Cart() {
                     <p className="cartFooterPrice">
                         Total: <span className="cartFooterTotalPrice">{parseFloat(totalPrice()).toFixed(2)}u$d</span>
                     </p>
-                    <div className="cartFooterBtns">
+                    <div className="cartFooterBtnsContainer">
                         <button className="cartFooterClearBtn" onClick={clearCart}>Vaciar carrito</button>
                         <Link to="/form" className="cartFooterContinueLink">Continuar</Link>
                     </div>

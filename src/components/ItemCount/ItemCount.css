@@ -8,6 +8,7 @@
 
 .itemCountBtns {
     margin: 2% 0;
+    padding: 1% 0;
 }
 
 .itemCountQuantity {
@@ -25,6 +26,12 @@
 .itemCountBtns--addToCart {
     border-width: 8px;
     font-size: inherit;
+
+}
+
+.itemCountBtns--addToCart:hover {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
 }
 
 /*Mediaqueries*/
@@ -41,7 +48,7 @@
 @media screen and (min-width: 1024px) {
     .itemCountContainer {
         width: 60%;
-        margin-top: 31%;
+        margin-top: 26%;
     }
 
     .itemCountBtns--addToCart {

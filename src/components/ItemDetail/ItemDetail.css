@@ -71,6 +71,11 @@
     padding: 1%;
 }
 
+.endOrContinueLinks:hover {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
+}
+
 /*Mediaqueries*/
 @media screen and (min-width: 390px) {
     .detailContainer {

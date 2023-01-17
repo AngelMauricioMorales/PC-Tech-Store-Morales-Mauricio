@@ -43,7 +43,7 @@
     color: var(--dollarColor-var);
 }
 
-.cartFooterBtns {
+.cartFooterBtnsContainer {
     display: flex;
     justify-content: space-around;
     margin: 5% 0;
@@ -56,12 +56,19 @@
     border-right: 8px outset var(--primaryDark-var);
     color: var(--primaryDark-var);
     text-decoration: none;
-    padding: 0 3%;
+    padding: 0.5%;
 }
 
 .cartFooterClearBtn {
     border-width: 8px;
-    padding: 0 1%;
+    padding: 0.5%;
+}
+
+.cartFooterContinueLink:hover,
+.cartFooterClearBtn:hover,
+.emptyCartbackToBuyLink:hover {
+    background-color: var(--primaryDark-var);
+    color: var(--primaryWhite-var);
 }
 
 /*Mediaqueries*/
@@ -86,7 +93,7 @@
 
 @media screen and (min-width: 1024px) {
     .emptyCartbackToBuyLink {
-        padding: 1%;
+        padding: 0.5%;
     }
 
     .cartFooterClearBtn {

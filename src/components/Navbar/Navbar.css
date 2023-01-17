@@ -22,6 +22,11 @@
     color: var(--primaryDark-var);
 }
 
+.navbarLink:hover {
+    text-decoration: underline double;
+    color: var(--dollarColor-var);
+}
+
 .showNavbar {
     display: block;
     position: absolute;
