@@ -4,11 +4,12 @@
 
 @media screen and (min-width: 1024px) {
     .banner {
-        padding-top: 3.5%;
+        padding-top: 3%;
     }
 
     .bannerContainerImg {
         width: 100%;
+        height: 60vh;
         margin: auto;
     }
 }

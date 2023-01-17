@@ -42,7 +42,6 @@
 
 .cartFooterTotalPrice {
     color: var(--dollarColor-var);
-    font-weight: bold;
 }
 
 .cartFooterBtns {

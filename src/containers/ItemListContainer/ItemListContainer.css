@@ -1,14 +1,18 @@
  #isLoading {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 2rem;
     font-weight: bold;
+    font-size: 2rem;
     height: 100vh;
+    margin-top: 35%;
 }
 
 .itemsList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    
 }

@@ -1,7 +1,7 @@
 .itemListProduct {
+    box-shadow: 2px 2px var(--primaryDark-var);
     border: 1px solid var(--primaryDark-var);
     border-radius: 2px;
-    box-shadow: 2px 2px var(--primaryDark-var);
     list-style: none;
     font-size: 0.7rem;
     padding: 1%;
@@ -38,7 +38,6 @@
     align-items: center;
     background-color: var(--primaryDark-var);
     color: var(--primaryWhite-var);
-    font-weight: bold;
 }
 
 .cardMoney {

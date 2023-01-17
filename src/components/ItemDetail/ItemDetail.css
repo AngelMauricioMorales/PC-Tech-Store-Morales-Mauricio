@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: 4%;
+    height: 65vh;
 }
 
 .detailItemContainer {

@@ -8,20 +8,17 @@
 
 .itemCountBtns {
     margin: 2% 0;
-    font-size: 1rem;
 }
 
 .itemCountQuantity {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8rem;
 }
 
 .itemCountQuantityNumber {
     border: 1px solid var(--primaryDark-var);
     border-radius: 3px;
-    font-weight: bold;
     padding: 1% 3%;
 }
 
