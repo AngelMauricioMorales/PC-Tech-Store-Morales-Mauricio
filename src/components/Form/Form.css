@@ -5,20 +5,19 @@
     background-color: var(--primaryWhite-var);
     border-radius: 5px;
     text-align: start;
-    padding: 5%;
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
 }
 
 .formTitle {
     background-color: var(--primaryDark-var);
     color: var(--primaryWhite-var);
     text-align: center;
-    padding: 1%;
+    padding: 2%;
 }
 
 label[for] {
-    margin-top: 10%;
+    margin: 10% 0 0 5%;
 }
 
 #userName,
@@ -28,10 +27,7 @@ label[for] {
 input[name="userEmailRepeat"] {
     border-radius: 5px;
     padding: 1%;
-}
-
-input[name="userEmailRepeat"] {
-    margin-top: 1%;
+    margin: 0 5%;
 }
   
 input:required {
@@ -48,7 +44,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     border: none;
-    margin: 10% 0 5% 0;
+    margin: 10% 5%;
 }
 
 .cancelLink {
@@ -85,4 +81,38 @@ fieldset {
 
 .formBuyBtn:disabled {
     visibility: hidden;
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 360px) {
+    .form {
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .form {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        height: 65vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form {
+        margin: 0 -25%;
+        width: 150%;
+        height: 65vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form {
+        width: 150%;
+        height: 49vh;
+    }
 }

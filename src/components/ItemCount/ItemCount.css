@@ -27,6 +27,7 @@
     font-size: inherit;
 }
 
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .itemCountContainer {
         width: 30%;
@@ -39,6 +40,12 @@
 
 @media screen and (min-width: 1024px) {
     .itemCountContainer {
-        padding: 1% 0;
+        width: 60%;
+        margin-top: 31%;
+    }
+
+    .itemCountBtns--addToCart {
+        border-top: 8px outset rgb(97, 97, 97);
+        border-left: 8px outset rgb(97, 97, 97);
     }
 }

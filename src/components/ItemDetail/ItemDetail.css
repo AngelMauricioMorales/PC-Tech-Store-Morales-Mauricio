@@ -1,9 +1,10 @@
 .detailContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: 4%;
-    height: 65vh;
+    min-height: 63vh;
 }
 
 .detailItemContainer {
@@ -55,7 +56,7 @@
 
 .endOrContinueText {
     width: 100%;
-    padding: 11% 0;
+    padding: 8% 0;
     font-size: 1.5rem;
 }
 
@@ -113,24 +114,23 @@
     }
 
     .detailFooter {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0;
         width: 45%;
     }
 
-    .detailFooterPrice,
-    .detailFooterStock {    
-        margin: 6% auto;
-        width: 30%;   
+    .detailCountContainer {
+        margin: auto;
+        width: 100%;
     }
 
+/*Estilización al cambio de botones del contador al agregar un producto al carrito*/
     .endOrContinueContainer {
-        justify-content: center;
-        align-items: baseline;
-        font-size: 1rem;
-        padding: 10% 0;
+        width: auto;
     }
 
-    .endOrContinueLinks {
-        margin: 0 1%;
+    .endOrContinueText {
+        padding: 21% 0;
     }
 }

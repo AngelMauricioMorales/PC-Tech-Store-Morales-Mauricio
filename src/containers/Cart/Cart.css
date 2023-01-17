@@ -4,8 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 68vh;
-    max-height: 100vh;
+    min-height: 66vh;
 }
 
 .emptyCartbackToBuyLink {
@@ -65,14 +64,33 @@
     padding: 0 1%;
 }
 
+/*Mediaqueries*/
+@media screen and (min-width: 360px) {
+    .emptyCart {
+        min-height: 63vh;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .emptyCart {
+        min-height: 67vh;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .emptyCart,
     .cartListContainer {
-        min-height: 55vh;
+        min-height: 50vh;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .emptyCartbackToBuyLink {
         padding: 1%;
+    }
+
+    .cartFooterClearBtn {
+        border-top: 8px outset rgb(97, 97, 97);
+        border-left: 8px outset rgb(97, 97, 97);
     }
 }
