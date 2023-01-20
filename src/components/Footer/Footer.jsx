@@ -23,22 +23,34 @@ function Footer() {
                 </ul>
                 <ul className="footerContactsList">
                     <li className="footerContactsListItem">
-                        <a className="footerContactListItemLink" href="https://www.linkedin.com/in/mauricio-angel-morales/">
+                        <a  className="footerContactListItemLink" 
+                            href="https://www.linkedin.com/in/mauricio-angel-morales/" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
                             <img src={linkedinIcon} alt="Icono de Linkedin"/>
                         </a>
                     </li>
                     <li className="footerContactsListItem">
-                        <a className="footerContactListItemLink" href="https://www.instagram.com/22mauricio77/">
+                        <a  className="footerContactListItemLink" 
+                            href="https://www.instagram.com/22mauricio77/" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
                             <img src={instagramIcon} alt="Icono de Instagram"/>
                         </a>
                     </li>
                     <li className="footerContactsListItem">
-                        <a className="footerContactListItemLink" href="https://twitter.com/Maurici95949397">
+                        <a  className="footerContactListItemLink" 
+                            href="https://twitter.com/Maurici95949397" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
                             <img src={twitterIcon} alt="Icono de Twitter"/>
                         </a>
                     </li>
                     <li className="footerContactsListItem">
-                        <a className="footerContactListItemLink" href="mailto:mauricio_morales_angel@hotmail.com">
+                        <a  className="footerContactListItemLink" 
+                            href="mailto:mauricio_morales_angel@hotmail.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
                             <img src={emailIcon} alt="Icono de mail"/>
                         </a>
                     </li>

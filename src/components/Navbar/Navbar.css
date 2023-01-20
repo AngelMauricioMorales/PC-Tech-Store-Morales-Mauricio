@@ -24,7 +24,7 @@
 
 .navbarLink:hover {
     text-decoration: underline double;
-    color: var(--dollarColor-var);
+    color: var(--primaryBlue-var);
 }
 
 .showNavbar {

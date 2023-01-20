@@ -4,7 +4,8 @@ import "./Item.css";
 
 const Item = memo(({product}) => {
     return <li className="itemListProduct">
-                <Link to={`/detail/${product.id}`} className="card">
+                <Link to={`/detail/${product.id}`}  className="itemListProductLink">Ver detalles</Link>
+                <div className="card">
                     <h2 className="cardTitle">{product.name}</h2>
                     <figure className="cardImg">
                         <img src={product.image} alt={product.description} />                                                                                    
@@ -12,7 +13,7 @@ const Item = memo(({product}) => {
                     <p className="cardPrice">
                         Precio: <span className="cardMoney">{parseFloat(product.price).toFixed(2)}u$d</span>
                     </p>	
-                </Link>
+                </div>
             </li>
 });
 
