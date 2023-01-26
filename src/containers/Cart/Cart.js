@@ -5,7 +5,24 @@ import './Cart.css';
 
 function Cart() {
     const {cartList, clearCart, totalPrice} = useCartContext();
+/* 
+    const dataBase = getFirestore();
 
+    const queryCollectionStock = collection(dataBase, "items");
+
+    const queryUpdateStock = query(queryCollectionStock, where(documentId(), "in", cartList.map(product => product.id)));
+
+    const batch = writeBatch(dataBase);
+
+    getDocs(queryUpdateStock)
+        .then(resp => resp.docs.forEach(res => batch.update(res.ref, {
+            stock: res.data().stock - cartList.find(product => product.id === res.id).quantity
+            } )));
+        .finally(()=> console.log('Actulalizado'));
+
+        batch.commit();
+    }
+*/
     return <>
         {   
             cartList.length === 0   
