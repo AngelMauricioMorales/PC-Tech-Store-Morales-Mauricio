@@ -22,11 +22,6 @@
     width: 100%;
 }
 
-.itemListProductLink:hover {
-    background-color: rgb(255, 255, 255, 0.8);
-    color: var(--primaryBlue-var);
-}
-
 .card {
     display: grid;
     grid-template-rows: 20% 70% 10%;
@@ -36,6 +31,7 @@
     text-decoration: none;
     color: var(--primaryDark-var);
     height: 100%;
+
 }
 
 .cardTitle {
@@ -69,7 +65,9 @@
         width: 20%;
     }
 
-    .itemListProductLink {
+    .itemListProductLink:hover {
+        background-color: rgb(255, 255, 255, 0.8);
+        color: var(--primaryBlue-var);
         font-size: 2rem;
     }
 }

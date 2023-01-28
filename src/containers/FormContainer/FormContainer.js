@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {getFirestore, collection, addDoc} from 'firebase/firestore';
+import {getFirestore, collection, getDocs, addDoc, writeBatch, query, where, documentId} from 'firebase/firestore';
 import {useCartContext} from '../../contexts/CartContext/CartContext';
 import Form from '../../components/Form/Form';
 import swal from 'sweetalert';
@@ -20,7 +20,7 @@ function FormContainer() {
     	setFormData({...formData, [event.target.name]: event.target.value});
  	};
 
-    const createOrder = (e) => {
+    const createOrder = async (e) => {
     	e.preventDefault();
 
         let order = {};
@@ -35,8 +35,8 @@ function FormContainer() {
         }));
 
         const dataBase = getFirestore();
-        const queryCollection = collection(dataBase, "orders");
-        addDoc(queryCollection, order)
+        const queryOrders = collection(dataBase, "orders");
+        await addDoc(queryOrders, order)
             .then(order => {
                 const orderID = `Este es tu código de seguimiento de la compra: ${order.id}`;
                 swal({
@@ -47,6 +47,19 @@ function FormContainer() {
             })
             .catch(error => console.log(error))
             .finally(() => clearCart()); 
+            
+        //Actualización del stock.
+        const batch = writeBatch(dataBase);
+        const queryProducts = collection(dataBase, "items");
+        const queryUpdateStock = query(queryProducts, where(documentId(), "in", cartList.map(product => product.id)));
+        
+        await getDocs(queryUpdateStock)
+            .then(resp => resp.docs.forEach(res => batch.update(res.ref, {
+                    stock: res.data().stock - cartList.find(product => product.id === res.id).quantity
+                } )))
+            .finally(() => console.log("Stock actualizado."));
+        
+        batch.commit();
     };
 
   	return  <div className={"formContainer"}>

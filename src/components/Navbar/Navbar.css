@@ -22,11 +22,6 @@
     color: var(--primaryDark-var);
 }
 
-.navbarLink:hover {
-    text-decoration: underline double;
-    color: var(--primaryBlue-var);
-}
-
 .showNavbar {
     display: block;
     position: absolute;
@@ -61,5 +56,10 @@
 
     .navbarLink {
         color: var(--primaryWhite-var);
+    }
+    
+    .navbarLink:hover {
+        text-decoration: underline double;
+        color: var(--primaryBlue-var);
     }
 }
