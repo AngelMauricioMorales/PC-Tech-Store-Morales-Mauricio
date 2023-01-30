@@ -5,11 +5,11 @@ import Title from '../../components/Title/Title';
 import './Header.css';
 
 function Header() {
-    const [showMenu, setShowMenu] = useState(false);
+    const [switchMenu, setSwitchMenu] = useState();
 
     const switchNavbar = () => {
-        !showMenu ? setShowMenu(true) : setShowMenu(false);
-    }
+        !switchMenu ? setSwitchMenu(true) : setSwitchMenu(false);
+    };
 
     return  <header className="header">
                 <Title />
@@ -18,7 +18,7 @@ function Header() {
                     <span className="burgerButtonContent"></span>
                     <span className="burgerButtonContent"></span>
                 </button>
-                <Navbar menu={showMenu} />
+                <Navbar switchMenu={switchMenu} />
                 <CartWidget />
             </header>
 };

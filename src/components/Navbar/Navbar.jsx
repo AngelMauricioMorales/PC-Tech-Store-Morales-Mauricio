@@ -1,8 +1,19 @@
+import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar ({menu}) {
-    return  <nav className={menu ? "showNavbar" : "navbar"}>
+function Navbar ({switchMenu}) {
+    const [navbar, setNavbar] = useState(
+        {
+            show: "showNavbar",
+            close: "hiddeNavbar"
+        }
+    );
+
+    const closeNavbar = () => {
+    };
+
+    return  <nav className={switchMenu ? navbar.show : navbar.close} onClick={closeNavbar}>
                 <ul className="navbarList">
                     <li className="navbarListItem">
                         <NavLink to="/category/cases" className="navbarLink">

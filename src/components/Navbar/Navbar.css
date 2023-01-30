@@ -1,4 +1,4 @@
-.navbar {
+.hiddeNavbar {
     display: none;
 }
 
@@ -23,9 +23,9 @@
 }
 
 .showNavbar {
+    background-color: var(--backdropsTransparent-var);
     display: block;
     position: absolute;
-    background-color: var(--backdropsTransparent-var);
     top: 0;
     width: 100%;
     height: 100vh;
@@ -34,7 +34,7 @@
 
 /*Mediaqueries*/
 @media screen and (min-width: 1024px) {
-    .navbar {
+    .hideNavbar {
         display: block;
         grid: burger;
         width: 100%;
