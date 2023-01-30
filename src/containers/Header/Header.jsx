@@ -7,10 +7,8 @@ import './Header.css';
 function Header() {
     const [switchMenu, setSwitchMenu] = useState();
 
-    const switchNavbar = () => {
-        !switchMenu ? setSwitchMenu(true) : setSwitchMenu(false);
-    };
-
+    const switchNavbar = () => !switchMenu ? setSwitchMenu(true) : setSwitchMenu(false);
+  
     return  <header className="header">
                 <Title />
                 <button className="burgerButton" type="button" onClick={switchNavbar}>

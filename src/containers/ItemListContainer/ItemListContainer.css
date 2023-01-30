@@ -7,11 +7,14 @@
     margin-top: 40%;
 }
 
+.itemsListSection {
+    min-height: 68vh;
+}
+
 .itemsList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 100vh;
 }
 
 /*Mediaqueries*/

@@ -34,7 +34,7 @@
 
 /*Mediaqueries*/
 @media screen and (min-width: 1024px) {
-    .hideNavbar {
+    .hiddeNavbar {
         display: block;
         grid: burger;
         width: 100%;
