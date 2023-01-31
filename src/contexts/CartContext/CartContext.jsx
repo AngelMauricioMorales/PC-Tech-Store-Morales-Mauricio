@@ -17,7 +17,7 @@ function CartContextProvider({children}) {
             setCartList([...cartList]);
         } else {
             setCartList([...cartList, newProduct]);
-        }
+        };
     };
 
     const amountQuantity = () => cartList.reduce((amount, product) => amount += product.quantity, 0);
