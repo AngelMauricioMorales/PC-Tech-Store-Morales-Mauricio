@@ -2,7 +2,6 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import ItemListContainer from '../containers/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../containers/ItemDetailContainer/ItemDetailContainer';
 import CartContextProvider from '../contexts/CartContext/CartContext';
-import MenuContextProvider from '../contexts/MenuContext/MenuContext';
 import FormContainer from '../containers/FormContainer/FormContainer';
 import Header from '../containers/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -12,7 +11,6 @@ import Cart from '../containers/Cart/Cart';
 function RoutesApp() {
     return  <BrowserRouter>
                 <CartContextProvider>
-                <MenuContextProvider>
                     <Header />
                     <Banner />
                     <Routes>
@@ -24,7 +22,6 @@ function RoutesApp() {
                         <Route path="/*" element={<Navigate to="/" replace />} />
                     </Routes>
                     <Footer />
-                </MenuContextProvider>
                 </CartContextProvider>
             </BrowserRouter>
 };

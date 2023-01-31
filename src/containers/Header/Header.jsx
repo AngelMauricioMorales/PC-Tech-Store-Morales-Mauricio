@@ -1,11 +1,13 @@
-import {useMenuContext} from '../../contexts/MenuContext/MenuContext';
+import {useState} from 'react';
 import CartWidget from '../../components/CartWidget/CartWidget';
 import Navbar from '../../components/Navbar/Navbar';
 import Title from '../../components/Title/Title';
 import './Header.css';
 
 function Header() {
-    const {switchNavbar, switchMenu} = useMenuContext();
+    const [switchMenu, setSwitchMenu] = useState();
+
+    const switchNavbar = () => !switchMenu ? setSwitchMenu(true) : setSwitchMenu(false);
 
     return  <header className="header">
                 <Title />
