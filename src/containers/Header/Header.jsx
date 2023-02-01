@@ -18,11 +18,14 @@ function Header() {
                     <span className="burgerButtonContent"></span>
                     <span className="burgerButtonContent"></span>
                 </button>
+                <div className="desktopNavbarContainer">
+                    <Navbar />
+                </div>
                 <CartWidget />
                 {
                     toggleMenu 
                     ? 
-                    <div className="backdrop" onClick={closeBackdrop}>
+                    <div className={"mobileBackdrop"} onClick={closeBackdrop}>
                         <Navbar /> 
                     </div>
                     :

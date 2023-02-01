@@ -17,3 +17,24 @@
     text-decoration: none;
     color: var(--primaryDark-var);
 }
+
+/*Mediaqueries*/
+@media screen and (min-width: 1024px) {
+    .navbar {
+        background-color: transparent;
+    }
+
+    .navbarList {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbarListItem {
+        margin: 0;
+    }
+
+    .navbarLink {
+        color: var(--primaryWhite-var);
+    }
+}

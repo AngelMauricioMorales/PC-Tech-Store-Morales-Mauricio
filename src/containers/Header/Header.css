@@ -29,7 +29,7 @@
     width: 100%;
 }
 
-.backdrop {
+.mobileBackdrop {
     background-color: var(--backdropsTransparent-var);
     display: block;
     position: absolute;
@@ -40,6 +40,11 @@
     z-index: -1;
 }
 
+.desktopNavbarContainer {
+    display: none;
+}
+
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .burgerButton {
         min-width: 20%;
@@ -50,11 +55,15 @@
     .header {
         grid-template-columns: 0.25fr 2fr 0.25fr;
         justify-content: space-between;
-        padding: 0.5%;
         width: 100%;
     }
 
     .burgerButton {
         display: none;
+    }
+
+    .desktopNavbarContainer {
+        display: block;
+        width: 100%;
     }
 }
