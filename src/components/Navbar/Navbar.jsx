@@ -1,8 +1,8 @@
 import {NavLink} from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar ({switchMenu}) {
-    return  <nav className={switchMenu ? "showNavbar" : "hiddeNavbar"}>
+function Navbar () {
+    return  <nav className="navbar">
                 <ul className="navbarList">
                     <li className="navbarListItem">
                         <NavLink to="/category/cases" className="navbarLink">

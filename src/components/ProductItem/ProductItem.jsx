@@ -1,8 +1,8 @@
 import {memo} from 'react';
 import {Link} from 'react-router-dom';
-import "./Item.css";
+import "./ProductItem.css";
 
-const Item = memo(({product}) => {
+const ProductItem = memo(({product}) => {
     return <li className="itemListProduct">
                 <Link to={`/detail/${product.id}`}  className="itemListProductLink">Ver detalles</Link>
                 <div className="card">
@@ -17,4 +17,4 @@ const Item = memo(({product}) => {
             </li>
 });
 
-export default Item;
+export default ProductItem;

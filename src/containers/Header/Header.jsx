@@ -1,23 +1,33 @@
 import {useState} from 'react';
 import CartWidget from '../../components/CartWidget/CartWidget';
 import Navbar from '../../components/Navbar/Navbar';
-import Title from '../../components/Title/Title';
+import MainTitle from '../../components/MainTitle/MainTitle';
 import './Header.css';
 
 function Header() {
-    const [switchMenu, setSwitchMenu] = useState();
+    const [toggleMenu, setToggleMenu] = useState(false);
 
-    const switchNavbar = () => !switchMenu ? setSwitchMenu(true) : setSwitchMenu(false);
+    const toggleNavbar = () => setToggleMenu(!toggleMenu);
+
+    const closeBackdrop = () => setToggleMenu(false);
 
     return  <header className="header">
-                <Title />
-                <button className="burgerButton" type="button" onClick={switchNavbar}>
+                <MainTitle />
+                <button className="burgerButton" type="button" onClick={toggleNavbar}>
                     <span className="burgerButtonContent"></span>
                     <span className="burgerButtonContent"></span>
                     <span className="burgerButtonContent"></span>
                 </button>
-                <Navbar switchMenu={switchMenu} />
                 <CartWidget />
+                {
+                    toggleMenu 
+                    ? 
+                    <div className="backdrop" onClick={closeBackdrop}>
+                        <Navbar /> 
+                    </div>
+                    :
+                    null
+                }      
             </header>
 };
 

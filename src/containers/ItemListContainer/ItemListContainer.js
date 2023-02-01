@@ -1,10 +1,10 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import {collection, getDocs, getFirestore, query, where} from 'firebase/firestore';
-import ItemList from '../../components/ItemList/ItemList';
+import ProductsItemList from '../../components/ProductsItemList/ProductsItemList';
 import './ItemListContainer.css'; 
 
-function ItemListContainer() {
+function ProductsItemListContainer() {
   	const [isLoading, setIsLoading] = useState(true);
   	const [products, setProducts] = useState([]);
 
@@ -28,10 +28,10 @@ function ItemListContainer() {
 		:
 		<section className="itemsListSection">
 			<ul className="itemsList">
-				<ItemList products={products} />
+				<ProductsItemList products={products} />
 			</ul>
 		</section> 	
 	)
 };
 
-export default ItemListContainer;
+export default ProductsItemListContainer;

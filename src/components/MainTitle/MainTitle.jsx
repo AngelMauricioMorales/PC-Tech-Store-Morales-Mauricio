@@ -1,8 +1,8 @@
 import {Link} from 'react-router-dom';
 import brandLogo from './images/brandLogo.png';
-import './Title.css';
+import './MainTitle.css';
 
-function Title () {
+function MainTitle () {
     return  <h1 className="mainTitle">
                 <Link to="/" className="mainTitleLogo">
                     <img className="mainTitleLogoImg" src={brandLogo} alt="PC Tech Store" />
@@ -10,4 +10,4 @@ function Title () {
             </h1>
 };
 
-export default Title;
+export default MainTitle;
