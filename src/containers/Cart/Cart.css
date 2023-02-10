@@ -4,6 +4,7 @@
 
 .cart-list-header_title {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--primaryDark-2c2b2b);
     border-top: 1px solid var(--primaryBlue-0000ca);
@@ -41,7 +42,7 @@
     text-decoration: none;
     font-family: inherit;
     font-size: inherit;
-    padding: 2%;
+    padding: 1%;
     width: 50%;
 }
 

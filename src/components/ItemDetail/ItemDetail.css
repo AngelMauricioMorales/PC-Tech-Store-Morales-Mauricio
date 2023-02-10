@@ -1,5 +1,6 @@
 .detail-title {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--primaryDark-2c2b2b);
     border-top: 1px solid var(--primaryBlue-0000ca);
@@ -71,8 +72,8 @@
 
 .end-continue_btns {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 5% 0;
 }
 
 .end-continue_links {
@@ -84,7 +85,8 @@
     border-bottom: 2px double rgb(34, 33, 33);
     text-decoration: none;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
+    width: 100%;
 }
 
 .end-continue_links:hover {
