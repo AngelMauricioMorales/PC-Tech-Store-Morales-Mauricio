@@ -13,11 +13,6 @@
 	padding: 0;
 }
 
-#root {
-	max-width: 1200px;
-	margin: auto;
-}
-
 body {
 	min-height: 100vh;
 	font-family: "COUGAR", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;

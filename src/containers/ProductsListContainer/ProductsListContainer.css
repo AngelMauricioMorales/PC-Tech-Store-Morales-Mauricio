@@ -28,3 +28,9 @@
         font-size: 2rem;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .items-list-section_title {
+        padding: 2% 0;
+    }
+}

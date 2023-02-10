@@ -1,24 +1,31 @@
 .brand {
-    padding-left: 5%;
+    padding: 5% 0;
 }
 
-.brand_link {
-    width: 100%;
+.brand_logo {
+    width: 30%;
+    margin: auto;
 }
 
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
-    .brand {
-        padding-left: 30%;
-    }
-
     .brand_logo {
-        width: 50%;
+        width: 20%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .brand_logo {
-        width: 30%;
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .brand {
+        padding: 0;
+    }
+
+    .brand_logo {
+        width: 25%;
     }
 }

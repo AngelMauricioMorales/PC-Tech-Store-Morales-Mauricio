@@ -4,12 +4,13 @@
     border-bottom: 1px solid var(--primaryBlue-0000ca);
     background-color: var(--primaryDark-2c2b2b);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
 }
 
 .burger {
-    grid: burger;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,5 +51,21 @@
 @media screen and (min-width: 1024px) {
     .burger-content {
         width: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        background-color: rgba(0, 0, 0, 0.8);
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        align-items: center;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .desktop-navbar {
+        display: flex;
     }
 }

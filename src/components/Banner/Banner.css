@@ -32,6 +32,11 @@
 
 .banner-section {
     position: relative;
+    width: 100%;
+}
+
+.banner-section_video {
+    width: 100%;
 }
 
 .banner_container {
@@ -66,5 +71,11 @@
 @media screen and (min-width: 1024px) {
     .banner_container {
         font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner_container {
+        bottom: 45%;
     }
 }

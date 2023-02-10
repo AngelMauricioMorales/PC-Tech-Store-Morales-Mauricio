@@ -70,3 +70,13 @@
         height: 30vh;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .items-list_product {
+        width: 25%;
+    }
+
+    .items-list-product-card_img img {
+        height: 20vh;
+    }
+}

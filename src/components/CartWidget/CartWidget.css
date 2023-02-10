@@ -9,16 +9,33 @@
     align-items: center;
     text-decoration: none;
     color: var(--primaryWhite-ffffff);
-    height: 65%;
+    width: 100%;
 }
 
 .cart-widget_img {
-    height: 100%;
+    width: 30%;
+    margin: auto;
 }
 
 /*Mediaqueries*/
+@media screen and (min-width: 768px) {
+    .cart-widget_img {
+        width: 20%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    .cart-widget_img {
+        width: 15%;
+    }
+
     .cart-widget_number {
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cart-widget_img {
+        width: 25%;
     }
 }

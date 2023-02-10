@@ -32,3 +32,29 @@
         margin: 5% 0;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        background-color: transparent;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .navbar_list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: none;
+        width: 100%;
+    }
+
+    .navbar-list_item {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid var(--primaryBlue-0000ca);
+        border-left: 1px solid var(--primaryBlue-0000ca);
+        height: 100%;
+        margin: 1% 0;
+        padding: 0 2%;
+    }
+}
