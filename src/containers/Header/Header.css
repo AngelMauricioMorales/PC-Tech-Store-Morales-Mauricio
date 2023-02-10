@@ -1,69 +1,54 @@
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "title burger cart";
-    justify-items: center;
-    align-items: center;
-    background-color: var(--primaryDark-var);
+    border-bottom: 1px solid var(--primaryBlue-0000ca);
+    background-color: var(--primaryDark-2c2b2b);
     position: fixed;
-    z-index: 10;
+    width: 100%;
+    z-index: 100;
 }
 
-.burgerButton {
+.burger {
     grid: burger;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    background-color: var(--primaryDark-var);
+    align-items: center;
     border: none;
-    min-width: 25%; 
+    border-right: 1px solid var(--primaryBlue-0000ca);
+    border-left: 1px solid var(--primaryBlue-0000ca);
+    background-color: transparent;
 }
 
-.burgerButtonContent {
-    border: 1px solid var(--primaryDark-var);
-    background-color: var(--primaryWhite-var);
+.burger-content {
+    background-color: var(--primaryWhite-ffffff);
     border-radius: 5px;
-    padding: 4.3%;
-    margin: 3%;
-    width: 100%;
+    width: 40%;
+    height: 5px;
+    margin: 1% 0;
 }
 
-.mobileBackdrop {
-    background-color: var(--backdropsTransparent-var);
-    display: block;
+.mobile-navbar {
+    background-color: var(--backdropsTransparent-2600ff80);
     position: absolute;
-    top: 0;
+    top: 102%;
     width: 100%;
     height: 100vh;
-    padding-top: 11%;
-    z-index: -1;
 }
 
-.desktopNavbarContainer {
+.desktop-navbar {
     display: none;
 }
 
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
-    .burgerButton {
-        min-width: 20%;
+    .burger-content {
+        width: 25%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .header {
-        grid-template-columns: 0.25fr 2fr 0.25fr;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .burgerButton {
-        display: none;
-    }
-
-    .desktopNavbarContainer {
-        display: block;
-        width: 100%;
+    .burger-content {
+        width: 15%;
     }
 }

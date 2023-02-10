@@ -1,58 +1,74 @@
-.cartList {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.cartListItem {
+.cart-list-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid var(--primaryDark-var);
-    border-radius: 3px;
-    padding: 1%;
-    margin: 2% 0;
-    width: 48%;
+    border: 1px solid var(--primaryDark-2c2b2b);
+    list-style: none;
 }
 
-.cartListItemHeader {
+.cart-list-item_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--primaryDark-2c2b2b);
+    color: var(--primaryWhite-ffffff);
+    font-size: 0.7rem;
+    padding: 2% 1%;
 }
 
-.cartListIItemHeaderRemove {
-    padding: 1% 3%;
+.cart-list-item-header_removeBtn {
+    background-color: transparent;
+    border: none;
 }
 
-.cartListIItemHeaderRemove:hover {
-    background-color: var(--primaryDark-var);
-    color: var(--primaryWhite-var);
+.cart-list-item_figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
 }
 
-.cartListItemFigure {
-    height: 5rem;
-    margin: auto;
+.cart-list-item_figure img {
+    padding: 1%;
+    height: 6rem;
+    width: 30%;
 }
 
-.cartListItemFigure img {
-    height: 100%;
+.cart-list-item-figure_description {
+    font-size: 0.75rem;
 }
 
-.cartListItemQuantity {
-    background-color: var(--primaryDark-var);
-    color: var(--primaryWhite-var);
+.cart-list-item_quantity {
+    background-color: var(--primaryDark-2c2b2b);
+    color: var(--primaryWhite-ffffff);
+    padding: 2% 0;
 }
 
-/*Mediqueries*/
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
-    .cartListItem {
-        width: 30%;
+    .cart-list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
     }
 
-    .cartListItemFigure {
-        height: 7rem;
+    .cart-list-item {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cart-list-item {
+        width: 33.33%;
+    }
+
+    .cart-list-item_header,
+    .cart-list-item-header_removeBtn,
+    .cart-list-item-figure_description {
+        font-size: inherit;
+    }
+
+    .cart-list-item_figure img {
+        height: 10rem;
+        width: 50%;
     }
 }

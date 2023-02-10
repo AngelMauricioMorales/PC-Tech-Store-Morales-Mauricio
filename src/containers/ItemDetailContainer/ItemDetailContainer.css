@@ -1,16 +1,14 @@
 .loading {
     display: flex;
     justify-content: center;
-    font-weight: bold;
-    font-size: 2rem;
+    align-items: center;
+    font-size: 1.5rem;
     height: 100vh;
-    margin-top: 40%;
 }
 
-/*Mediaqueries*/
-@media screen and (min-width: 1200px) {
-    .lLoading {
-        align-items: center;
-        margin-top: 0;
+/*Mediqueries*/
+@media screen and (min-width: 768px) {
+    .loading {
+        font-size: 2rem;
     }
 }

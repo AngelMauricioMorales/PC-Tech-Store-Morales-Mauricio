@@ -12,65 +12,69 @@ function Form({inputsHandler, formData, createOrder}) {
 
 	useEffect(() => userData ? setswitchBoolean(false) : setswitchBoolean(true), [userData]);
 
-  	return (
-		<div className="formBackdrop">
-    		<form onSubmit={Form} className="form">
-				<h2 className="formTitle">Completa el formulario</h2>
-    		  	<label 	htmlFor="userName">Nombre</label>
-    		  	<input	id="userName"
-    		  	  		name="userName"
-    		  	  		type="text"
-						pattern="\w[a-zA-z]+\s\w[a-zA-Z]+"
-    		  	  		placeholder="Ej: Fulanito Mengano"
-    		  	  		onChange={inputsHandler}
-    		  	  		value={formData.userName}
-    		  	  		required
-						autoFocus
-    		  	/>
-    		  	<label 	htmlFor="userEmail">Email</label>
-    		  	<input	id="userEmail"
-    		    		name="userEmail"
-    		    		type="email"
-    		    		pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
-    		    		placeholder="Ej: user_email@myemail.com"
-    		    		onChange={inputsHandler}
-    		    		value={formData.userEmail}
-    		    		required
-    		  	/>
-				<label 	htmlFor="userEmailRepeated">Repita el email</label>
-    		  	<input	id="userEmailRepeated"
-    		    		name="userEmailRepeated"
-    		    		type="email"
-    		    		pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
-    		    		onChange={inputsHandler}
-    		    		value={formData.userEmailRepeated}
-    		    		required
-    		  	/>
-    		  	<label 	htmlFor="userPhone">Telefono</label>
-    		  	<input	id="userPhone"
-    		    		name="userPhone"
-    		    		type="tel"
-						pattern="\d*(11|15)[0-9]+"
-    		    		placeholder="Ej: 1123456789"
-						maxLength="10"
-						minLength="10"
-    		    		onChange={inputsHandler}
-    		    		value={formData.userPhone}
-    		    		required
-    		  	/>
-				<fieldset>
-					<Link to="/cart" className="cancelLink">Cancelar</Link>
-    		  		<button className="formBuyBtn" 
+  	return 	<form onSubmit={Form} className="form">
+				<h2 className="form_title">Completa el formulario</h2>
+				<fieldset className="form_inputs-container">
+    		  		<label 	htmlFor="userName">Nombre</label>
+    		  		<input	id="userName"
+    		  		  		name="userName"
+    		  		  		type="text"
+							pattern="\w[a-zA-z]+\s\w[a-zA-Z]+"
+    		  		  		placeholder="Ej: Fulanito Mengano"
+    		  		  		onChange={inputsHandler}
+    		  		  		value={formData.userName}
+    		  		  		required
+							autoFocus
+    		  		/>
+				</fieldset>
+				<fieldset className="form_inputs-container">
+    		  		<label 	htmlFor="userEmail">Email</label>
+    		  		<input	id="userEmail"
+    		    			name="userEmail"
+    		    			type="email"
+    		    			pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
+    		    			placeholder="Ej: user_email@myemail.com"
+    		    			onChange={inputsHandler}
+    		    			value={formData.userEmail}
+    		    			required
+    		  		/>
+				</fieldset>
+				<fieldset className="form_inputs-container">
+					<label 	htmlFor="userEmailRepeated">Repita el email</label>
+    		  		<input	id="userEmailRepeated"
+    		    			name="userEmailRepeated"
+    		    			type="email"
+    		    			pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
+    		    			onChange={inputsHandler}
+    		    			value={formData.userEmailRepeated}
+    		    			required
+    		  		/>
+				</fieldset>
+				<fieldset className="form_inputs-container">
+    		  		<label 	htmlFor="userPhone">Telefono</label>
+    		  		<input	id="userPhone"
+    		    			name="userPhone"
+    		    			type="tel"
+							pattern="\d*(11|15)[0-9]+"
+    		    			placeholder="Ej: 1123456789"
+							maxLength="10"
+							minLength="10"
+    		    			onChange={inputsHandler}
+    		    			value={formData.userPhone}
+    		    			required
+    		  		/>
+				</fieldset>
+				<fieldset className="form_inputs-container--footer">
+					<Link to="/cart" className="form_inputs-container--footer_cancel-link">Cancelar</Link>
+    		  		<button className="form_inputs-container--footer_buy-btn" 
 							type="submit" 
 							onClick={createOrder} 
 							disabled={switchBoolean}
 					>	
-					<Link to="/cart" className="formBuyLink">Realizar compra</Link>
+					<Link to="/cart" className="form_inputs-container--footer_buy-link">Realizar compra</Link>
 					</button>
 				</fieldset>
     		</form>
-		</div>
-  	);
 };
 
 export default Form;

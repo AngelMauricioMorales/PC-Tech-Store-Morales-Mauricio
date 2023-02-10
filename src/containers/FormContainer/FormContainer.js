@@ -3,7 +3,6 @@ import {getFirestore, collection, getDocs, addDoc, writeBatch, query, where, doc
 import {useCartContext} from '../../contexts/CartContext/CartContext';
 import Form from '../../components/Form/Form';
 import swal from 'sweetalert';
-import './FormContainer.css';
 
 function FormContainer() {
     const {cartList, clearCart, totalPrice} = useCartContext();
@@ -62,7 +61,7 @@ function FormContainer() {
         batch.commit();
     };
 
-  	return  <div className={"formContainer"}>
+  	return  <div className="formBackdrop">
                 <Form inputsHandler={inputsHandler} formData={formData} createOrder={createOrder} />
 		    </div>
 };

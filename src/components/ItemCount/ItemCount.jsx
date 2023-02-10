@@ -10,13 +10,25 @@ function ItemCount({stock, initial, addQuantity}) {
 
 	const addQuantityProduct = () => addQuantity(quantity);
 
-  	return	<div className="itemCountContainer">
-      			<button className="itemCountBtns" type="button" onClick={sum}>+</button>
-      			<div className="itemCountQuantity">
-        			¿Cuantos llevas?: <span className="itemCountQuantityNumber">{quantity}</span>
+  	return	<div className="item-count-container">
+      			<button className="item-count_btns" 
+						type="button" 
+						onClick={sum} 
+						disabled={stock !== 0 ? false : true}
+				>
+					+
+				</button>
+      			<div className="item-count_quantity">
+        			¿Cuantos llevas?: <span className="item-count-quantity_number">{quantity}</span>
       			</div>
-      			<button className="itemCountBtns" type="button" onClick={substract}>-</button>
-      			<button className="itemCountBtns itemCountBtns--addToCart" 
+      			<button className="item-count_btns" 
+						type="button" 
+						onClick={substract} 
+						disabled={stock !== 0 ? false : true}
+				>
+					-
+				</button>
+      			<button className="item-count_btns item-count_btns--add" 
 						type="button" 
 						onClick={addQuantityProduct}
 						disabled={stock !== 0 ? false : true}

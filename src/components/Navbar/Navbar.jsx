@@ -3,44 +3,44 @@ import './Navbar.css';
 
 function Navbar () {
     return  <nav className="navbar">
-                <ul className="navbarList">
-                    <li className="navbarListItem">
-                        <NavLink to="/category/cases" className="navbarLink">
+                <ul className="navbar_list">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/cases" className="navbar-list-item_link">
                             GABINETES
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/peripherals" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/peripherals" className="navbar-list-item_link">
                             PERIFERICOS
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/power-banks" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/power-banks" className="navbar-list-item_link">
                             FUENTES
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/cpus" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/cpus" className="navbar-list-item_link">
                             PROCESADORES
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/gpus" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/gpus" className="navbar-list-item_link">
                             GRAFICOS
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/motherboards" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/motherboards" className="navbar-list-item_link">
                             MOTHERBOARDS
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/storages" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/storages" className="navbar-list-item_link">
                             ALMACENAMIENTO
                         </NavLink>
                     </li>
-                    <li className="navbarListItem">
-                        <NavLink to="/category/cooling" className="navbarLink">
+                    <li className="navbar-list_item">
+                        <NavLink to="/category/cooling" className="navbar-list-item_link">
                             REFRIGERACION
                         </NavLink>
                     </li>

@@ -14,44 +14,46 @@ function ItemDetail({item}) {
         setCounter(false);
     };
 
-    return (
-        <>
-            <div className="detailContainer">
-                <div className="detailItemContainer">
-		        	<h2 className="detailItemTitle">{item.name}</h2>
-                    <figure className="detailItemFigure">
+    return  <div className="detail">
+                <h2 className="detail-title">
+                    <Link to="/" className="detail-backward">⫷ Volver</Link>
+                    Detalles
+                </h2>
+                <div className="detail_item-container">
+		        	<h3 className="detail_item-title">{item.name}</h3>
+                    <figure className="detail_item-figure">
                         <img src={item.image} alt={item.description} />
-                        <figcaption className="detailItemDescription">{item.description}</figcaption>
+                        <figcaption className="detail_item-description">{item.description}</figcaption>
                     </figure>
                 </div>
-                <div className="detailFooter">
-                    <p className="detailFooterPrice">
-		            	<span className="detailFooterPriceSpan">Precio:</span>
-                        <span className="detailFooterPriceNumber">{parseFloat(item.price).toFixed(2)}u$d</span>
-		            </p>	
-                    <p className="detailFooterStock">
-                        <span className="detailFooterStockSpan">Stock:</span> 
-                        <span className="detailFooterStockNumber">{item.stock === 0 ? "Agotado" : item.stock}</span>
-                    </p>
-                    <div className="detailCountContainer">
-                        {
-                            counter   
-                            ?   
-                            <ItemCount  stock={item.stock} 
-                                        initial={1} 
-                                        addQuantity={addToCart} />  
-                            :   
-                            <div className="endOrContinueContainer">
-                                <p className="endOrContinueText">¡Agregado!😉</p>
-                                <Link to="/cart" className="endOrContinueLinks">Finalizar compra</Link>
-                                <Link to="/" className="endOrContinueLinks">Seguir comprando</Link>
-                            </div>
-                        }
+                <div className="detail-footer">
+                    <div className="detail-footer_price-stock">
+                        <p className="detail-footer_price">
+		                	<span className="detail-footer-price_text">Precio: </span>
+                            <span className="detail-footer-price_number">{parseFloat(item.price).toFixed(2)} u$d</span>
+		                </p>	
+                        <p className="detail-footer_stock">
+                            <span className="detail-footer-stock_text">Stock: </span> 
+                            <span className="detail-footer-stock_number">{item.stock === 0 ? "Agotado" : item.stock}</span>
+                        </p>
                     </div>
+                    {
+                        counter   
+                        ?   
+                        <ItemCount  stock={item.stock} 
+                                    initial={1} 
+                                    addQuantity={addToCart} />  
+                        :   
+                        <div className="end-continue-container">
+                            <p className="end-continue_text">¡Agregado!😉</p>
+                            <div className="end-continue_btns">
+                                <Link to="/cart" className="end-continue_links">Finalizar compra</Link>
+                                <Link to="/" className="end-continue_links">Seguir comprando</Link>
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
-        </>
-    );
 };
 
 export default ItemDetail;

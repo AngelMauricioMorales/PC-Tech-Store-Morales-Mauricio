@@ -10,22 +10,26 @@ function Cart() {
         {   
             cartList.length === 0   
             ?
-            <div className="emptyCart">
-                <h2 className="emptyCartTitle">El carrito esta vacio.</h2>
-                <Link to="/" className="emptyCartbackToBuyLink">Ir a comprar</Link>
+            <div className="empty-cart">
+                <h2 className="empty-cart_title">El carrito esta vacio.</h2>
+                <Link to="/" className="empty-cart_back">Ir a comprar</Link>
             </div>   
             :   
-            <div className="cartListContainer">
-                <ul className="cartList">
+            <div className="cart-list-header">
+                <h2 className="cart-list-header_title">
+                    <Link to="/" className="cart-list-header_backward">⫷ Inicio</Link>
+                    Carrito
+                </h2>
+                <ul className="cart-list">
                     <CartList cartList={cartList} />
                 </ul>
-                <div className="cartFooter">
-                    <p className="cartFooterPrice">
-                        Total: <span className="cartFooterTotalPrice">{parseFloat(totalPrice()).toFixed(2)}u$d</span>
+                <div className="cart-footer">
+                    <p className="cart-footer_price">
+                        Total: <span className="cart-footer-price_number">{parseFloat(totalPrice()).toFixed(2)} u$d</span>
                     </p>
-                    <div className="cartFooterBtnsContainer">
-                        <button className="cartFooterClearBtn" onClick={clearCart}>Vaciar carrito</button>
-                        <Link to="/form" className="cartFooterContinueLink">Continuar</Link>
+                    <div className="cart-footer-btns">
+                        <button className="cart-footer-btns_clear" onClick={clearCart}>Vaciar carrito</button>
+                        <Link to="/form" className="cart-footer-btns_continue">Continuar</Link>
                     </div>
                 </div>
             </div>

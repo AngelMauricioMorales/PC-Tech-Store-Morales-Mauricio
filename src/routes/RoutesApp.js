@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
-import ItemListContainer from '../containers/ItemListContainer/ItemListContainer';
+import ProductsListContainer from '../containers/ProductsListContainer/ProductsListContainer';
 import ItemDetailContainer from '../containers/ItemDetailContainer/ItemDetailContainer';
 import CartContextProvider from '../contexts/CartContext/CartContext';
 import FormContainer from '../containers/FormContainer/FormContainer';
@@ -16,8 +16,8 @@ function RoutesApp() {
                     <Routes>
                         <Route path="/form" element={<FormContainer />} />
                         <Route path="/cart" element={<Cart />} />
-                        <Route path="/" element={<ItemListContainer />} />
-                        <Route path="/category/:itemCategory" element={<ItemListContainer />} />
+                        <Route path="/" element={<ProductsListContainer />} />
+                        <Route path="/category/:itemCategory" element={<ProductsListContainer />} />
                         <Route path="/detail/:detailId" element={<ItemDetailContainer />} />
                         <Route path="/*" element={<Navigate to="/" replace />} />
                     </Routes>

@@ -1,73 +1,72 @@
-.itemListProduct {
-    box-shadow: 2px 2px var(--primaryDark-var);
-    border: 1px solid var(--primaryDark-var);
-    border-radius: 2px;
-    list-style: none;
-    font-size: 0.7rem;
-    margin: 2%;
-    width: 44%;
-    height: 25vh;
-    position: relative;
+.items-list_product {
+    border: 1px solid var(--primaryBlue-0000ca);
+    width: 50%;
 }
 
-.itemListProductLink {
+.items-list-product_card {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    position: absolute;
+    align-content: space-between;
     text-decoration: none;
-    color: transparent;
-    font-size: 1.1rem;
+    color: var(--primaryDark-2c2b2b);
+    padding: 10%;
     height: 100%;
+}
+
+.items-list-product-card_title {
+    text-align: center;
+    font-size: 0.8rem;
     width: 100%;
 }
 
-.card {
-    display: grid;
-    grid-template-rows: 20% 70% 10%;
-    grid-template-areas: "title"
-                         "image"
-                         "price";
-    text-decoration: none;
-    color: var(--primaryDark-var);
-    height: 100%;
-
-}
-
-.cardTitle {
-    grid: title;
-    padding: 0.5% 0 0 1%;
-}
-
-.cardImg img {
-    grid: image;
-    height: 100%;
+.items-list-product-card_img {
+    height: fit-content;
     width: 100%;
 }
 
-.cardPrice {
-    grid: price;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primaryDark-var);
-    color: var(--primaryWhite-var);
+.items-list-product-card_img img {
+    height: 20vh;
+    width: 100%;
 }
 
-.cardMoney {
-    color: var(--dollarColor-var);
+.items-list-product-card_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    width: 100%;
+}
+
+.items-list-product-card-price_money {
+    color: var(--dollarColor-008000);
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 300px) {
+    .items-list-product-card_price,
+    .items-list-product-card_title {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .items-list_product {
+        width: 33.33%; 
+    }
+
+    .items-list-product-card_price,
+    .items-list-product-card_title {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    .itemListProduct {
-        font-size: inherit;
-        height: 30vh;
-        width: 20%;
+    .items-list_product {
+        width: 25%;
     }
 
-    .itemListProductLink:hover {
-        background-color: rgb(255, 255, 255, 0.8);
-        color: var(--primaryBlue-var);
-        font-size: 2rem;
+    .items-list-product-card_img img {
+        height: 30vh;
     }
 }

@@ -1,118 +1,107 @@
-.form {
+.formBackdrop {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--primaryWhite-var);
-    border-radius: 5px;
-    text-align: start;
-    width: 100vw;
-    height: 50vh;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: var(--formBackdrops-e2e2e2b3);
 }
 
-.formTitle {
-    background-color: var(--primaryDark-var);
-    color: var(--primaryWhite-var);
+.form {
+    color: var(--primaryWhite-ffffff);
+    background-color: var(--primaryDark-2c2b2b);
+    border-bottom: 1px solid var(--primaryBlue-0000ca);
+    width: 100%;
+}
+
+.form_title {
+    border-top: 1px solid var(--primaryBlue-0000ca);
+    border-bottom: 1px solid var(--primaryBlue-0000ca);
+    font-size: 1.2rem;
     text-align: center;
+    padding: 5% 0;
+}
+
+.form_inputs-container {
+    border: none;
+    padding: 5% 8%;
+}
+
+.form_inputs-container input {
+    width: 100%;
     padding: 2%;
+    font-weight: bold;
+    border-radius: 3px;
 }
 
-label[for] {
-    margin: 10% 0 0 5%;
-}
-
-#userName,
-#userEmail,
-#userEmailRepeated,
-#userPhone,
-input[name="userEmailRepeat"] {
-    border-radius: 5px;
-    padding: 1%;
-    margin: 0 5%;
+.form_inputs-container input:required {
+    border: 1px solid red;
 }
   
-input:required {
-    border: 1.5px solid red;
-    border-radius: 5px;
-}
-  
-input:valid {
-    border: 1.5px solid var(--dollarColor-var);
-    border-radius: 5px;
+.form_inputs-container input:valid {
+    border: 1px solid var(--dollarColor-008000);
 }
 
-fieldset {
+.form_inputs-container--footer {
     display: flex;
     justify-content: space-between;
     border: none;
-    margin: 10% 5%;
+    padding: 5% 8%;
 }
 
-.cancelLink {
-    border-top: 8px outset rgb(97, 97, 97);
-    border-left: 8px outset rgb(97, 97, 97);
-    border-bottom: 8px outset var(--primaryDark-var);
-    border-right: 8px outset var(--primaryDark-var);
-    color: var(--primaryDark-var);
+.form_inputs-container--footer_cancel-link,
+.form_inputs-container--footer_buy-btn {
+    background-color: var(--primaryDark-2c2b2b);
+    color: var(--primaryWhite-ffffff);
+    border-top: 2px double gray;
+    border-left: 2px double gray;
+    border-right: 2px double rgb(34, 33, 33);
+    border-bottom: 2px double rgb(34, 33, 33);
     text-decoration: none;
+    font-family: inherit;
     text-align: center;
-    padding: 1% 5%;
+    font-size: 0.7rem;
+    padding: 2% 0;
+    width: 45%;
 }
 
-.formBuyBtn {
-    border-top: 8px outset rgb(97, 97, 97);
-    border-left: 8px outset rgb(97, 97, 97);
-    border-bottom: 8px outset var(--primaryDark-var);
-    border-right: 8px outset var(--primaryDark-var);
-    padding: 1%;
-}
-
-.formBuyLink {
-    color: var(--primaryDark-var);
+.form_inputs-container--footer_buy-link {
+    color: var(--primaryWhite-ffffff);
     text-decoration: none;
-    padding: 5.5% 0;
+    padding: 5%;
 }
 
-.formBuyBtn:hover,
-.formBuyLink:hover,
-.cancelLink:hover {
-    background-color: var(--primaryDark-var);
-    color: var(--primaryWhite-var);
+.form_inputs-container--footer_cancel-link:hover,
+.form_inputs-container--footer_buy-btn:hover,
+.form_inputs-container--footer_buy-link:hover {
+    background-color: var(--primaryWhite-ffffff);
+    color: var(--primaryDark-2c2b2b);
 }
 
-.formBuyBtn:disabled {
+.form_inputs-container--footer_buy-btn:disabled {
     visibility: hidden;
 }
 
 /*Mediaqueries*/
-@media screen and (min-width: 360px) {
-    .form {
-        height: 60vh;
-    }
-}
-
-@media screen and (min-width: 390px) {
-    .form {
-        height: 50vh;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .form {
-        height: 65vh;
+    .form_inputs-container--footer_cancel-link,
+    .form_inputs-container--footer_buy-btn {
+        font-size: inherit;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .form {
-        margin: 0 -25%;
-        width: 150%;
-        height: 65vh;
+    .form_inputs-container,
+    .form_inputs-container--footer {
+        width: 50%;
+        margin: auto;
+        padding: 1%;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .form {
-        width: 150%;
-        height: 49vh;
+    .form_title {
+        font-size: 1.5rem;
     }
 }
