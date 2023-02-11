@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .items-list-section_title {
         padding: 2% 0;
     }

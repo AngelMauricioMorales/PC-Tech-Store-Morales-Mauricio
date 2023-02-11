@@ -1,6 +1,7 @@
 .item-count-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .item-count_btns {
@@ -10,7 +11,7 @@
     font-weight: bold;
     font-size: 1rem;
     padding: 1% 0;
-    width: 100%;
+    width: 90%;
 }
 
 .item-count_btns:hover {
@@ -30,7 +31,6 @@
 }
 
 .item-count_quantity {
-    padding: 2% 0;
     text-align: center;
 }
 
@@ -40,13 +40,5 @@
 
 /*Mediaqueries*/
 @media screen and (min-width: 1024px) {
-    .item-count_btns {
-        width: 40%;
-        margin: auto;
-    }
 
-    .item-count-container {
-        width: 50%;
-        padding: 1%;
-    }
 }

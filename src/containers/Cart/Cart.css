@@ -73,3 +73,14 @@
 .cart-footer-btns {
     display: flex;
 }
+
+/*Mediaqueries*/
+@media screen and (min-width: 1024px) {
+    .cart-list-header_title {
+        padding: 1% 5%;
+    }
+
+    .empty-cart {
+        padding: 15% 0;
+    }
+}

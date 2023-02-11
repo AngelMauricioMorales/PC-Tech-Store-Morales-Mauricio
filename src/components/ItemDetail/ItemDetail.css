@@ -16,6 +16,10 @@
     text-align: start;
 }
 
+.detail-backward--back {
+    text-decoration: underline;
+}
+
 /*Item*/
 .detail_item-container {
     border-top: 1px solid var(--primaryDark-2c2b2b);
@@ -45,16 +49,21 @@
 
 /*Footer*/
 .detail-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-bottom: 1px solid var(--primaryBlue-0000ca);
     border-top: 1px solid var(--primaryBlue-0000ca);
     background-color: var(--primaryDark-2c2b2b);
     color: var(--primaryWhite-ffffff);
-    padding-bottom: 5%;
+    padding: 5%;
 }
 
 .detail-footer_price-stock {
     display: flex;
     justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 5% 0;
 }
 
@@ -67,13 +76,15 @@
 .end-continue_text {
     text-align: center;
     font-size: 1.5rem;
-    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .end-continue_btns {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 5% 0;
+    height: 100%;
 }
 
 .end-continue_links {
@@ -86,6 +97,7 @@
     text-decoration: none;
     text-align: center;
     padding: 1%;
+    margin: 1% 0;
     width: 100%;
 }
 
@@ -113,52 +125,37 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .detail {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detail-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .detail-backward {
+        order: 2;
+    }
+
+    .detail_item-container {
+        border: 1px solid var(--primaryBlue-0000ca);
+        padding: 5% 0;
+        margin: 0;
+    }
+
+    .detail_item-title {
+        padding: 0 5%;
+    }
+
     .detail_item-figure {
-        display: flex;
-        align-items: center;
-        width: 80%;
-    }
-
-    .detail_item-figure img {
-        height: 30vh;
-    }
-
-    .detail-footer {
-        display: flex;
-        border-top: 1px solid var(--primaryBlue-0000ca);
-        padding-top: 5%;
-    }
-
-    .detail-footer_price-stock,
-    .end-continue-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        border: none;
-        padding: 0;
-        width: 50%;
-    }
-
-    .end-continue_btns {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .end-continue_links {
-        width: 40%;
-        margin: 0.5% 0;
-    }
-
-    .end-continue_text {
-        padding: 0 0 5% 0;
+        width: 90%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .detail-title {
-        padding: 1% 5%;
-    }
-
     .detail_item-container {
         padding: 1% 0;
         margin: 1% 0;

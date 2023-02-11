@@ -1,5 +1,5 @@
 .footer {
-    background-color: black;
+    background-color: var(--primaryDark-2c2b2b);
     color: var(--primaryWhite-ffffff);
 }
 

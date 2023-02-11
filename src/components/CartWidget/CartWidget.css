@@ -7,6 +7,7 @@
 .cart-widget_link {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--primaryWhite-ffffff);
     width: 100%;
@@ -14,7 +15,7 @@
 
 .cart-widget_img {
     width: 30%;
-    margin: auto;
+    margin: 0;
 }
 
 /*Mediaqueries*/
@@ -26,7 +27,7 @@
 
 @media screen and (min-width: 1024px) {
     .cart-widget_img {
-        width: 15%;
+        width: 10%;
     }
 
     .cart-widget_number {
