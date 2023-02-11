@@ -23,15 +23,15 @@
     .cart-widget_img {
         width: 20%;
     }
+
+    .cart-widget_number {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .cart-widget_img {
         width: 10%;
-    }
-
-    .cart-widget_number {
-        font-size: 1.2rem;
     }
 }
 

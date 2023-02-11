@@ -60,6 +60,7 @@
     border-left: 2px double gray;
     border-right: 2px double rgb(34, 33, 33);
     border-bottom: 2px double rgb(34, 33, 33);
+    border-radius: 25%;
     text-decoration: none;
     font-family: inherit;
     text-align: center;

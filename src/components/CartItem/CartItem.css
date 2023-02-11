@@ -3,6 +3,7 @@
     flex-direction: column;
     border: 1px solid var(--primaryDark-2c2b2b);
     list-style: none;
+    margin: 1%;
 }
 
 .cart-list-item_header {
@@ -52,7 +53,11 @@
     }
 
     .cart-list-item {
-        width: 50%;
+        width: 47%;
+    }
+
+    .cart-list-item-header_removeBtn {
+        font-size: 1rem;
     }
 }
 

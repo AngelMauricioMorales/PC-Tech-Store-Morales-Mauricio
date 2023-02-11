@@ -9,8 +9,9 @@
 .items-list {
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
+    justify-content: space-between;
     list-style: none;
+    padding: 0 1%;
 }
 
 .items-list-section_title {
@@ -18,6 +19,7 @@
     border-top: 1px solid var(--primaryBlue-0000ca);
     background-color: var(--primaryDark-2c2b2b);
     color: var(--primaryWhite-ffffff);
+    font-size: inherit;
     text-align: center;
     padding: 5% 0;
 }
@@ -27,10 +29,14 @@
     .isLoading {
         font-size: 2rem;
     }
+
+    .items-list-section_title {
+        padding: 2% 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    .items-list-section_title {
-        padding: 2% 0;
+    .items-list {
+        padding: 0;
     }
 }

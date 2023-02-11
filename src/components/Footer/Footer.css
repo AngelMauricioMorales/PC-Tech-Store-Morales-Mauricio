@@ -1,6 +1,5 @@
 .footer {
-    background-color: var(--primaryDark-2c2b2b);
-    color: var(--primaryWhite-ffffff);
+    color: var(--primaryDark-2c2b2b);
 }
 
 .footer_data-list-container,
@@ -13,12 +12,12 @@
 .footer_data-list_title,
 .footer_contacts-list_title {
     text-align: center;
-    padding: 5% 0;
+    padding: 5% 0 2% 0;
     width: 100%;
 }
 
 .footer_data-list {
-    padding: 5%;
+    padding: 2% 0 5% 0;
 }
 
 .footer-data-list_item {
@@ -55,4 +54,8 @@
         height: 100%;
         padding: 0;
     }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
