@@ -15,6 +15,10 @@
 .item-count_btns {
     background-color: var(--primaryDark-2c2b2b);
     color: var(--primaryWhite-ffffff);
+    border-top: 2px double gray;
+    border-left: 2px double gray;
+    border-right: 2px double rgb(34, 33, 33);
+    border-bottom: 2px double rgb(34, 33, 33);
     border-radius: 50%;
     font-family: inherit;
     font-weight: bold;
@@ -22,20 +26,25 @@
     padding: 3%;
 }
 
-.item-count_btns:hover {
-    background-color: var(--primaryWhite-ffffff);
-    color: var(--primaryDark-2c2b2b);
-}
-
 .item-count_addToCart {
     background-color: var(--primaryDark-2c2b2b);
     color: var(--primaryWhite-ffffff);
+    border-top: 2px double gray;
+    border-left: 2px double gray;
+    border-right: 2px double rgb(34, 33, 33);
+    border-bottom: 2px double rgb(34, 33, 33);
     font-family: inherit;
     border-radius: 25%;
     padding: 1.5% 0;
     margin-top: 5%;
     width: 90%;
 }
+
+.item-count_btns:hover,
+.item-count_addToCart:hover {
+    background-color: black;
+}
+
 
 .item-count_btns:disabled,
 .item-count_addToCart:disabled {

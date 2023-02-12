@@ -16,7 +16,7 @@ function ItemDetail({item}) {
 
     return  <div className="detail">
                 <h2 className="detail-title">
-                    <Link to="/" className="detail-backward">⫷ <span className="detail-backward--back">Volver</span></Link>
+                    <Link to="/" className="detail-backward">⫷ <span>Volver</span></Link>
                     <span className="detail-backward--detail">Detalles</span>
                 </h2>
                 <div className="detail_item-container">

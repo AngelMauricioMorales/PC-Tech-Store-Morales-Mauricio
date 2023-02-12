@@ -65,7 +65,7 @@
     font-family: inherit;
     text-align: center;
     font-size: 0.7rem;
-    padding: 2% 0;
+    padding: 1% 0;
     width: 45%;
 }
 
@@ -78,8 +78,7 @@
 .form_inputs-container--footer_cancel-link:hover,
 .form_inputs-container--footer_buy-btn:hover,
 .form_inputs-container--footer_buy-link:hover {
-    background-color: var(--primaryWhite-ffffff);
-    color: var(--primaryDark-2c2b2b);
+    background-color: black;
 }
 
 .form_inputs-container--footer_buy-btn:disabled {
@@ -92,6 +91,11 @@
     .form_inputs-container--footer_buy-btn {
         font-size: inherit;
     }
+
+    .form_inputs-container--footer_cancel-link,
+    .form_inputs-container--footer_buy-btn {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -100,6 +104,11 @@
         width: 50%;
         margin: auto;
         padding: 1%;
+    }
+
+    .form_inputs-container--footer_cancel-link,
+    .form_inputs-container--footer_buy-btn {
+        width: 30%;
     }
 
     .form_title {
