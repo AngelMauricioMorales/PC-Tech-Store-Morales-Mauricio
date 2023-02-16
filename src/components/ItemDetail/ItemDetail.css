@@ -86,7 +86,6 @@
 
 .end-continue_btns {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     padding: 5% 0;
     height: 100%;
@@ -100,6 +99,7 @@
     border-right: 2px double rgb(34, 33, 33);
     border-bottom: 2px double rgb(34, 33, 33);
     border-radius: 25%;
+    font-size: 0.8rem;
     text-decoration: none;
     text-align: center;
     padding: 1%;
@@ -147,6 +147,7 @@
     }
 
     .end-continue_links {
+        font-size: inherit;
         width: 30%;
     }
 }
