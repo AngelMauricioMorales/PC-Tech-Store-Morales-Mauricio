@@ -3,8 +3,8 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--primaryDark-2c2b2b);
-    border-top: 1px solid var(--primaryBlue-0000ca);
     border-bottom: 1px solid var(--primaryBlue-0000ca);
+    border-top: 1px solid var(--primaryBlue-0000ca);
     color: var(--primaryWhite-ffffff);
     font-size: inherit;
     text-align: center;
@@ -21,13 +21,11 @@
     text-decoration: none;
     text-align: center;
     padding: 1% 0;
-    width: 60%;
+    width: 70%;
 }
 
 /*Item*/
 .detail_item-container {
-    border-top: 1px solid var(--primaryDark-2c2b2b);
-    border-bottom: 1px solid var(--primaryDark-2c2b2b);
     padding: 5% 0;
     margin: 5%;
 }
@@ -58,10 +56,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 1px solid var(--primaryBlue-0000ca);
-    border-bottom: 1px solid var(--primaryBlue-0000ca);
-    background-color: var(--primaryDark-2c2b2b);
-    color: var(--primaryWhite-ffffff);
     padding: 5%;
 }
 
@@ -80,6 +74,7 @@
 /*Botones*/
 .end-continue_text {
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
     padding-top: 5%;
 }
@@ -92,8 +87,7 @@
 }
 
 .end-continue_links {
-    background-color: var(--primaryDark-2c2b2b);
-    color: var(--primaryWhite-ffffff);
+    color: var(--primaryDark-2c2b2b);
     border-top: 2px double gray;
     border-left: 2px double gray;
     border-right: 2px double rgb(34, 33, 33);
@@ -109,7 +103,8 @@
 
 .detail-backward:hover,
 .end-continue_links:hover {
-    background-color: black;
+    color: var(--primaryWhite-ffffff);
+    background-color: var(--primaryDark-2c2b2b);
 }
 
 /*Mediaqueries*/
@@ -120,6 +115,18 @@
 }
 
 @media screen and (min-width: 768px) {
+    .detail-title {
+        padding: 1% 5%;
+    }
+
+    .detail_item-section {
+        padding: 5%;
+    }
+
+    .detail_item-container {
+        margin: 0;
+    }
+
     .detail_item-title {
         text-align: start;
     }    
@@ -129,8 +136,8 @@
     }
 
     .detail_item-figure {
-        width: 60%;
-        margin: auto;
+        width: 70%;
+        margin: 5% auto 0 auto;
     }
 
     .detail-footer {
@@ -148,78 +155,54 @@
 
     .end-continue_links {
         font-size: inherit;
+        padding: 0;
         width: 30%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .detail {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .detail-title {
+    .detail_item-section {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .detail-backward {
-        order: 2;
-        padding: 1%;
     }
 
     .detail_item-container {
-        border: 1px solid var(--primaryBlue-0000ca);
-        padding: 5% 0;
-        margin: 0;
-    }
-
-    .detail_item-title {
-        padding: 0 5%;
+        width: 40%;
+        padding: 0;
+        margin: auto;
     }
 
     .detail_item-figure {
-        width: 90%;
+        width: 100%;
     }
 
     .detail-footer {
-        justify-content: space-evenly;
-        border-bottom: 1px solid var(--primaryBlue-0000ca);
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .detail-footer_price-stock {
         padding: 0;
+        border-bottom: none;
     }
 
     .end-continue_text {
-        padding: 0;
-    }
-
-    .end-continue-container {
-        display: flex;
-        flex-direction: column;
+        padding-bottom: 15%;
     }
 
     .end-continue_btns {
-        justify-content: space-evenly;
-        padding: 5% 0;
+        padding: 0;
+        height: unset;
     }
 
     .end-continue_links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.9rem;
-        width: 40%;
+        padding: 0;
+        margin: 0;
+        width: 35%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .detail_item-container {
-        padding: 1% 0;
-        margin: 1% 0;
-    }
-
-    .detail_item-title {
-        text-align: center;
-        font-size: 1.5rem;
+    .detail_item-section {
+        padding: 5% 0;
     }
 }

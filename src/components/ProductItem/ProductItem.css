@@ -8,12 +8,13 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: space-between;
+    text-decoration: none;
     color: var(--primaryDark-2c2b2b);
     border: 1px solid var(--primaryDark-2c2b2b);
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5% 0 0 0;
     height: 100%;
-    transition: box-shadow 0.7s, transform 0.7s;
+    transition: box-shadow 0.5s, transform 0.5s;
 }
 
 .items-list-product_card:hover {
@@ -42,8 +43,6 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--primaryDark-2c2b2b);
-    border-bottom-right-radius: 2.5px;
-    border-bottom-left-radius: 2.5px;
     color: var(--primaryWhite-ffffff);
     font-size: 0.75rem;
     padding: 5% 2%;

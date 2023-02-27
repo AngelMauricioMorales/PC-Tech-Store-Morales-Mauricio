@@ -62,8 +62,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .cart-list {
+        justify-content: unset;
+    }
+
     .cart-list-item {
-        width: 33.33%;
+        justify-content: space-between;
+        width: 30%;
     }
 
     .cart-list-item_header,
@@ -75,5 +80,11 @@
     .cart-list-item_figure img {
         height: 10rem;
         width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cart-list-item {
+        margin: 2% 0;
     }
 }
