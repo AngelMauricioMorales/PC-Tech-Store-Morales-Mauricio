@@ -8,7 +8,7 @@ function CartWidget() {
 
     return  <div className="cart-widget-container">
                 <Link to="/cart" className="cart-widget_link">
-                    <img className="cart-widget_img" src={cartIcon} alt="Icono del carrito" />
+                    <img className="cart-widget_icon" src={cartIcon} alt="Icono del carrito" />
                     <output className="cart-widget_number">{amountQuantity() !== 0 && amountQuantity()}</output>
                 </Link>
             </div>

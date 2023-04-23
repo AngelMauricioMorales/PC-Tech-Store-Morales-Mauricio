@@ -2,13 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    color: var(--primaryWhite);
+    font-size: x-large;
     height: 100vh;
-}
-
-/*Mediqueries*/
-@media screen and (min-width: 768px) {
-    .loading {
-        font-size: 2rem;
-    }
 }

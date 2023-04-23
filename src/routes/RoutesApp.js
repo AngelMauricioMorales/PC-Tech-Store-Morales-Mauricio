@@ -5,8 +5,8 @@ import CartContextProvider from '../contexts/CartContext/CartContext';
 import FormContainer from '../containers/FormContainer/FormContainer';
 import Header from '../containers/Header/Header';
 import Footer from '../components/Footer/Footer';
-import Banner from '../components/Banner/Banner';
 import Cart from '../containers/Cart/Cart';
+import Banner from '../components/Banner/Banner';
 
 function RoutesApp() {
     return  <BrowserRouter>

@@ -1,84 +1,42 @@
 .item-count-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
+    padding: 5% 0;
 }
 
 .item-count_btnscontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 70%;
+    margin: 5% auto;
 }
 
 .item-count_btns {
-    border-top: 2px double gray;
-    border-left: 2px double gray;
-    border-right: 2px double rgb(34, 33, 33);
-    border-bottom: 2px double rgb(34, 33, 33);
-    border-radius: 50%;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 2%;
+    background-color: var(--formBackdrops);
+    color: var(--primaryWhite);
+    font-weight: bolder;
+    font-size: large;
+    border: 3px double var(--primaryWhite);
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
 }
 
 .item-count_addToCart {
-    border-top: 2px double gray;
-    border-left: 2px double gray;
-    border-right: 2px double rgb(34, 33, 33);
-    border-bottom: 2px double rgb(34, 33, 33);
-    font-family: inherit;
-    font-size: 1rem;
-    border-radius: 25%;
-    padding: 1.5% 0;
-    margin-top: 5%;
-    width: 90%;
+    color: var(--primaryWhite);
+    background-color: var(--formBackdrops);
+    border: 3px double var(--primaryWhite);
+    border-radius: 3px;
+    padding: 1%;
 }
 
-.item-count_btns:hover,
-.item-count_addToCart:hover {
-    background-color: var(--primaryDark-2c2b2b);
-    color: var(--primaryWhite-ffffff);
-}
-
-
-.item-count_btns:disabled,
-.item-count_addToCart:disabled {
-    background-color: gray;
-    color: var(--primaryDark-2c2b2b);
-}
-
-.item-count_quantity {
-    text-align: center;
-}
-
-.item-count-quantity_number {
-    color: var(--dollarColor-008000);
-}
-
-/*Mediaqueries*/
+/*Mediaquerie*/
 @media screen and (min-width: 768px) {
-    .item-count_btnscontainer,
-    .item-count_addToCart {
-        width: 50%;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .item-count-container {
-        justify-content: center;
-        padding: 0;
-    }
-
     .item-count_btnscontainer {
-        justify-content: space-evenly;
-        width: 100%;
+        width: 50%;
     }
 
-    .item-count_addToCart {
-        padding: 0;
+    .item-count_btns {
+        width: 35px;
+        height: 35px;
     }
 }

@@ -26,8 +26,8 @@ function ProductsListContainer() {
 		? 	
 		(<p className="isLoading">Cargando...</p>) 	
 		:
-		<section className="items-list-section">
-			<h2 className="items-list-section_title">Catalogo de productos</h2>
+		<section id="catalogue" className="items-list-section">
+			<h2 className="items-list-section_title">Catálogo</h2>
 			<ul className="items-list">
 				<ProductsItemList products={products} />
 			</ul>

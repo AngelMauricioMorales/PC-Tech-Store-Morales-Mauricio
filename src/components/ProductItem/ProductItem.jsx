@@ -10,7 +10,7 @@ const ProductItem = memo(({product}) => {
                         <img src={product.image} alt={product.description} />                                                                                    
                     </figure> 	
                     <p className="items-list-product-card_price">
-                        Precio: <span className="items-list-product-card-price_money">{parseFloat(product.price).toFixed(2)} u$d</span>
+                        {parseFloat(product.price).toFixed(2)} u$d
                     </p>	    
                 </Link>
             </li>

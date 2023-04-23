@@ -51,7 +51,7 @@ function Form({inputsHandler, formData, createOrder}) {
     		  		/>
 				</fieldset>
 				<fieldset className="form_inputs-container">
-    		  		<label 	htmlFor="userPhone">Telefono</label>
+    		  		<label 	htmlFor="userPhone">Teléfono</label>
     		  		<input	id="userPhone"
     		    			name="userPhone"
     		    			type="tel"

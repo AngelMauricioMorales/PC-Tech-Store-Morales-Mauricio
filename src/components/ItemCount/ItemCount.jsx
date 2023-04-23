@@ -12,9 +12,6 @@ function ItemCount({stock, initial, addQuantity}) {
 
   	return	<div className="item-count-container">
 				<div className="item-count_btnscontainer">
-      				<div className="item-count_quantity">
-        				¿Cuantos llevas?: <span className="item-count-quantity_number">{quantity}</span>
-      				</div>
       				<button className="item-count_btns" 
 							type="button" 
 							onClick={substract} 
@@ -22,6 +19,9 @@ function ItemCount({stock, initial, addQuantity}) {
 					>
 						-
 					</button>
+      				<div className="item-count_quantity">
+        				¿Cuántos llevas?: <span className="item-count-quantity_number">{quantity}</span>
+      				</div>
       				<button className="item-count_btns" 
 							type="button" 
 							onClick={sum} 

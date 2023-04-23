@@ -14,9 +14,9 @@ function ItemDetail({item}) {
         setCounter(false);
     };
 
-    return  <div className="detail">
+    return  <div className="detail-section">
                 <h2 className="detail-title">
-                    <Link to="/" className="detail-backward">⫷ <span>Volver</span></Link>
+                    <Link to="/" className="detail-backward">⫷</Link>
                     <span className="detail-backward--detail">Detalles</span>
                 </h2>
                 <section className="detail_item-section">

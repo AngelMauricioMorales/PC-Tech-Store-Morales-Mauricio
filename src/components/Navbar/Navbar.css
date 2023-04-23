@@ -1,79 +1,34 @@
 .navbar {
     display: flex;
     justify-content: center;
-    text-align: center;
-    background-color: var(--primaryDark-2c2b2b);
-    border-bottom: 1px solid var(--primaryBlue-0000ca);
+    background-color: var(--primaryDark);
+    border-top: 3px double var(--primaryWhite);
+    border-right: 3px double var(--primaryWhite);
+    border-bottom: 3px double var(--primaryWhite);
+    width: 80%;
 }
 
 .navbar_list {
-    border-right: 1px solid var(--primaryBlue-0000ca);
-    border-left: 1px solid var(--primaryBlue-0000ca);
-    width: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .navbar-list_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 10% 5%;
-    transition: background-color 0.5s;
+    border-top: 1px solid var(--primaryWhite);
+    border-bottom: 1px solid var(--primaryWhite);
 }
 
 .navbar-list-item_link {
-    background-color: var(--primaryDark-2c2b2b);
-    color: var(--primaryWhite-ffffff);
-    border-top: 2px double gray;
-    border-left: 2px double gray;
-    border-right: 2px double rgb(34, 33, 33);
-    border-bottom: 2px double rgb(34, 33, 33);
-    border-radius: 25%;
+    color: var(--primaryWhite);
     text-decoration: none;
-    font-family: inherit;
-    text-align: center;
-    padding: 2%;
-    width: 100%;
-}
-
-.navbar-list_item:hover {
-    background-color: var(--primaryBlue-0000ca);
 }
 
 /*Mediaqueries*/
-@media screen and (min-width: 1024px) {
-    .navbar-list_item {
-        margin: 5% 10%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .navbar {
-        background-color: transparent;
-        border-bottom: none;
-        width: 100%;
-    }
-
-    .navbar_list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border: none;
-        width: 100%;
-    }
-
-    .navbar-list_item {
-        display: flex;
-        align-items: center;
-        border-right: 1px solid var(--primaryBlue-0000ca);
-        border-left: 1px solid var(--primaryBlue-0000ca);
-        height: 100%;
-        margin: 1% 0;
-        padding: 0 2%;
-    }
-
-    .navbar-list-item_link {
-        background-color: transparent;
-        border: none;
+@media screen and (min-width: 768px) {
+    .navbar_list  {
+        width: 50%;
     }
 }

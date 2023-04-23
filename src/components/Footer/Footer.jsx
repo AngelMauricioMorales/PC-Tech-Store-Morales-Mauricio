@@ -6,23 +6,26 @@ import "./Footer.css";
 
 function Footer() {
     return  <footer className="footer">
-                <div className="footer_data-list-container">
-                    <h4 className="footer_data-list_title">Info</h4>
-                    <ul className="footer_data-list">
-                        <li className="footer-data-list_item">
-                            <span>Alumno</span>: Mauricio Ángel Morales
-                        </li>
-                        <li className="footer-data-list_item">
-                            <span>Profesor</span>: Federico Osandón
-                        </li>
-                        <li className="footer-data-list_item">
-                            <span>Comision</span>: 34800
-                        </li>
-                        <li className="footer-data-list_item">
-                            <span>Escuela</span>: Coder House
-                        </li>
-                    </ul>
-                </div>
+                <h3 className="footer-brand">
+                    PC Tech Store
+                </h3>
+                <table className="footer_info-table">
+                    <tr className="footer_info-table_row_header">
+                        <th className="footer_info-table-row_title" colSpan={2}>Info</th>
+                    </tr>
+                    <tr className="footer_info-table_row">
+                        <td className="footer_info-table-row_division1">Alumno:</td><td className="footer_info-table-row_division2">Mauricio Morales</td>
+                    </tr>
+                    <tr className="footer_info-table_row">
+                        <td className="footer_info-table-row_division1">Profesor:</td><td className="footer_info-table-row_division2">Federico Osandon</td>
+                    </tr>
+                    <tr className="footer_info-table_row">
+                        <td className="footer_info-table-row_division1">Comision:</td><td className="footer_info-table-row_division2">34800</td>
+                    </tr>
+                    <tr className="footer_info-table_row">
+                        <td className="footer_info-table-row_division1">Escuela:</td><td className="footer_info-table-row_division2">Coder House</td>
+                    </tr>
+                </table>
                 <div className="footer_contact-list-container">
                     <h4 className="footer_contacts-list_title">Contacto</h4>
                     <ul className="footer_contacts-list">
