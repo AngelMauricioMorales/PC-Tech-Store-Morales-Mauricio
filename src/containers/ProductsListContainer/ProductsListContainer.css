@@ -9,13 +9,14 @@
 
 .items-list-section {
     text-align: center;
-    padding: 5% 0;
+    padding: 5% 1% 0 1%;
 }
 
 .items-list-section_title {
+    box-shadow: black 0 0 3px;
+    border: 1px solid var(--secondaryDark);
+    border-radius: 5px;
     color: var(--primaryWhite);
-    border-top: 2px solid var(--primaryWhite);
-    border-bottom: 2px solid var(--primaryWhite);
     padding: 1% 0;
 }
 

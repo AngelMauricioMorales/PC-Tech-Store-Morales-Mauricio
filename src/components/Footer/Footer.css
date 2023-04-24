@@ -24,11 +24,15 @@
     text-align: center;
     color: var(--primaryWhite);
     font-size: small;
+    background-color: var(--secondaryDark);
 }
 
 .footer-brand {
     animation: rgbBrand infinite 15s ease-in-out;
     font-family: "COUGAR";
+    background-color: var(--secondaryDark);
+    box-shadow: black 0 0 2px;
+    border: 1px solid var(--secondaryDark);
 }
 
 /*Info*/

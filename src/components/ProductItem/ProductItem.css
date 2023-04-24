@@ -1,6 +1,8 @@
 .items-list_product {
-    border: 3px double var(--primaryWhite);
-    border-radius: 3px;
+    background-color: var(--secondaryDark);
+    box-shadow: black 0 0 5px;
+    border: 1px solid var(--secondaryDark);
+    border-radius: 5px;
     margin: 5% 0;
     list-style: none;
 }
@@ -16,7 +18,8 @@
 }
 
 .items-list-product-card_img {
-    border: 5px solid var(--secondaryDark);
+    border: 3px solid var(--secondaryDark);
+    box-shadow: black 0 0 5px;
     height: 40vh;
 }
 
@@ -27,7 +30,6 @@
 }
 
 .items-list-product-card_price {
-    border-top: 3px double var(--primaryWhite);
     color: var(--dollarColor);
     padding: 1%;
 }

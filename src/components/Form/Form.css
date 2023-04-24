@@ -1,12 +1,18 @@
 .form {
-    border: 3px double var(--primaryWhite);
+    box-shadow: black 0 0 3px;
+    background-color: var(--secondaryDark);
+    border: 1px solid var(--secondaryDark);
+    border-radius: 5px;
     color: var(--primaryWhite);
     padding: 5%;
-    margin: 5% 0;
+    margin: 5% 1%;
 }
 
 .form_title {
-    border: 3px double var(--primaryWhite);
+    box-shadow: black 0 0 3px;
+    background-color: var(--secondaryDark);
+    border: 1px solid var(--secondaryDark);
+    border-radius: 5px;
     text-align: center;
     padding: 1%;
 }
@@ -26,10 +32,11 @@
 
 .form_inputs-container--footer_cancel-link,
 .form_inputs-container--footer_buy-btn {
-    background-color: var(--formBackdrops);
     color: var(--primaryWhite);
-    border: 3px double var(--primaryWhite);
-    border-radius: 3px;
+    box-shadow: black 0 0 2px;
+    background-color: var(--secondaryDark);
+    border: 1px solid var(--primaryDark);
+    border-radius: 5px;
     text-decoration: none;
     text-align: center;
     padding: 1%;

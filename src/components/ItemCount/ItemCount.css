@@ -1,32 +1,36 @@
 .item-count-container {
-    padding: 5% 0;
+    padding: 5%;
 }
 
 .item-count_btnscontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
     margin: 5% auto;
 }
 
 .item-count_btns {
-    background-color: var(--formBackdrops);
     color: var(--primaryWhite);
     font-weight: bolder;
     font-size: large;
-    border: 3px double var(--primaryWhite);
-    border-radius: 5px;
-    width: 25px;
-    height: 25px;
+    box-shadow: black 0 0 3px;
+    background-color: var(--secondaryDark);
+    border: 1px solid var(--primaryDark);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
 
 .item-count_addToCart {
+    font-family: inherit;
+    font-size: inherit;
     color: var(--primaryWhite);
-    background-color: var(--formBackdrops);
-    border: 3px double var(--primaryWhite);
-    border-radius: 3px;
+    box-shadow: black 0 0 2px;
+    background-color: var(--secondaryDark);
+    border: 1px solid var(--primaryDark);
+    border-radius: 5px;
     padding: 1%;
+    width: 100%;
 }
 
 /*Mediaquerie*/
