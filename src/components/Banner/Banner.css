@@ -1,4 +1,4 @@
-@keyframes bannerBackground {
+@keyframes bannerMobile {
     0% {
         background-image: url(./images/background-1.jpg);
         background-repeat: no-repeat;
@@ -21,8 +21,31 @@
     }
 }
 
+@keyframes bannerDesktop {
+    0% {
+        background-image: url(./images/background-4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(./images/background-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(./images/background-4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 .banner-container {
-    animation: bannerBackground 60s ease-in-out infinite;
+    animation: bannerMobile 60s ease-in-out infinite;
     position: relative;
     border: 3px double var(--primaryWhite);
     height: 100vh;
@@ -38,4 +61,11 @@
     bottom: 5%;
     left: 33.3%;
     padding: 1%;
+}
+
+/*Mediqueries*/
+@media screen and (min-width: 996px) {
+    .banner-container {
+        animation: bannerDesktop 60s ease-in-out infinite;
+    }
 }

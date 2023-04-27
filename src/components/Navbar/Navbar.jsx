@@ -1,9 +1,13 @@
 import {NavLink} from 'react-router-dom';
+import Brand from '../Brand/Brand';
 import './Navbar.css';
 
 function Navbar () {
     return  <nav className="navbar">
                 <ul className="navbar_list">
+                    <h1>
+                        <Brand />
+                    </h1>
                     <li className="navbar-list_item">
                         <NavLink to="/category/cases" className="navbar-list-item_link">
                             GABINETES

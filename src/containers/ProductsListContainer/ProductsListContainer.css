@@ -7,9 +7,10 @@
     height: 100vh;
 }
 
+/*Catalogo*/
 .items-list-section {
     text-align: center;
-    padding: 5% 1% 0 1%;
+    padding: 1% 0;
 }
 
 .items-list-section_title {
@@ -17,13 +18,23 @@
     border: 1px solid var(--secondaryDark);
     border-radius: 5px;
     color: var(--primaryWhite);
-    padding: 1% 0;
 }
 
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .items-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .items-list-section {
+        padding: 1% 1% 0 1%;
+    }
+
+    .items-list-section_title {
+        margin: auto;
     }
 }

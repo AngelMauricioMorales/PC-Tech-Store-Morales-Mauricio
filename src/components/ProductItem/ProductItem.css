@@ -20,7 +20,7 @@
 .items-list-product-card_img {
     border: 3px solid var(--secondaryDark);
     box-shadow: black 0 0 5px;
-    height: 40vh;
+    height: 20vh;
 }
 
 .items-list-product-card_img img {
@@ -36,10 +36,18 @@
 
 @media screen and (min-width: 768px) {
     .items-list_product {
-        width: 45%;
+        width: 49%;
+        margin: 1% 0;
     }
 
     .items-list-product-card_img {
         height: 30vh;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .items-list_product {
+        width: 33%;
+        margin: 0.5% 0;
     }
 }

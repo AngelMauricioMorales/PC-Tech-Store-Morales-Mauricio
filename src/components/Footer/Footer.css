@@ -82,3 +82,10 @@
         width: 50%;
     }
 }
+
+@media screen and (min-width: 996px) {
+    .footer_info-table,
+    .footer_contacts-list {
+        margin: 1% auto;
+    }
+}

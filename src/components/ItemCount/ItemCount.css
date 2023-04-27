@@ -13,7 +13,7 @@
     color: var(--primaryWhite);
     font-weight: bolder;
     font-size: large;
-    box-shadow: black 0 0 3px;
+    box-shadow: black 0 0 5px;
     background-color: var(--secondaryDark);
     border: 1px solid var(--primaryDark);
     border-radius: 50%;
@@ -33,14 +33,17 @@
     width: 100%;
 }
 
-/*Mediaquerie*/
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
-    .item-count_btnscontainer {
-        width: 50%;
-    }
-
     .item-count_btns {
         width: 35px;
         height: 35px;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .item-count-container {
+        border: 1px solid var(--primaryDark);
+        box-shadow: black 0 0 2px;
     }
 }

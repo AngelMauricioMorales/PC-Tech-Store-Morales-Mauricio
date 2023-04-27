@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--formBackdrops);
+    background-color: var(--primaryDark);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;

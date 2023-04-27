@@ -5,7 +5,7 @@
     border-top: 3px double var(--primaryWhite);
     border-right: 3px double var(--primaryWhite);
     border-bottom: 3px double var(--primaryWhite);
-    width: 80%;
+    width: 67%;
 }
 
 .navbar_list {
@@ -28,7 +28,14 @@
 
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
-    .navbar_list  {
-        width: 50%;
+    .navbar {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .navbar {
+        border: 3px double var(--primaryWhite);
+        width: 33.3%;
     }
 }

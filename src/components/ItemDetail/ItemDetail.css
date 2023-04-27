@@ -35,7 +35,7 @@
     border-top: 3px solid var(--secondaryDark);
     border-bottom: 3px solid var(--secondaryDark);
     box-shadow: black 0 0 5px;
-    height: 40vh;
+    height: 30vh;
     width: 100%;
 }
 
@@ -86,4 +86,42 @@
     border-radius: 5px;
     text-decoration: none;
     padding: 1%;
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 768px) {
+    .detail-title {
+        margin: 1% 0 0 0;
+    }
+
+    .detail_item-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 0;
+    }
+
+    .detail_item-figure {
+        width: 80%;
+        margin: auto;
+    }
+
+    .detail_item-figure img {
+        height: 20vh;
+    }
+
+    .detail_item-container {
+        width: 49.5%;
+    }
+
+    .detail-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49.5%;
+        margin: 0;
+    }
+
+    .detail-footer_price-stock {
+        box-shadow: black 0 0 2px;
+    }
 }
