@@ -20,7 +20,7 @@
 .items-list-product-card_img {
     border: 3px solid var(--secondaryDark);
     box-shadow: black 0 0 5px;
-    height: 20vh;
+    height: 30vh;
 }
 
 .items-list-product-card_img img {

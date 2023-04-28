@@ -6,7 +6,6 @@
     color: var(--primaryWhite);
     padding: 5%;
     width: 100%;
-    max-width: 300px;
 }
 
 .form_title {
@@ -83,6 +82,7 @@ input {
 @media screen and (min-width: 996px) {
     .form {
         padding: 1%;
+        max-width: 300px;
     }
 
     .form_title {
