@@ -46,7 +46,10 @@ function ItemDetail({item}) {
                                         addQuantity={addToCart} />  
                             :   
                             <div className="end-continue-container">
-                                <p className="end-continue_text">¡Agregado!😉</p>
+                                <p className="end-continue_text">
+                                    ¡Agregado!😉 <br />
+                                    Tu producto está en el carrito.
+                                </p>
                                 <div className="end-continue_btns">
                                     <Link to="/cart" className="end-continue_links">Finalizar compra</Link>
                                     <Link to="/" className="end-continue_links">Seguir comprando</Link>

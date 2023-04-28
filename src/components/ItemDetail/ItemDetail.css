@@ -28,7 +28,6 @@
     background-color: var(--secondaryDark);
     box-shadow: black 0 0 5px;
     border: 1px solid var(--secondaryDark);
-    border-radius: 5px;
 }
 
 .detail_item-figure img {
@@ -123,5 +122,15 @@
 
     .detail-footer_price-stock {
         box-shadow: black 0 0 2px;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .detail_item-figure img {
+        height: 30vh;
+    }
+
+    .end-continue_text {
+        font-size: x-large;
     }
 }

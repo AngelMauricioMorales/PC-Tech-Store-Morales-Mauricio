@@ -46,4 +46,8 @@
         border: 1px solid var(--primaryDark);
         box-shadow: black 0 0 2px;
     }
+
+    .item-count_addToCart {
+        width: 50%;
+    }
 }

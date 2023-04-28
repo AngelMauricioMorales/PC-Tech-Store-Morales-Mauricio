@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {getFirestore, collection, getDocs, addDoc, writeBatch, query, where, documentId} from 'firebase/firestore';
 import {useCartContext} from '../../contexts/CartContext/CartContext';
+import './FormContainer.css';
 import Form from '../../components/Form/Form';
 import swal from 'sweetalert';
 

@@ -4,6 +4,7 @@
     border: 1px solid var(--secondaryDark);
     border-radius: 5px;
     margin: 5% 0;
+    list-style: none;
 }
 
 .cart-list-item_header {
@@ -30,10 +31,18 @@
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .cart-list-item {
-        width: 50%;
+        margin: 1% 0;
+        width: 49.5%;
     }
 
     .cart-list-item_figure img {
         height: 20vh;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .cart-list-item {
+        width: 33%;
+        margin: 0.1%;
     }
 }
