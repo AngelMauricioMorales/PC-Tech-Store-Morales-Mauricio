@@ -52,3 +52,17 @@
         margin: 1% 0;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .burger {
+        visibility: hidden;
+    }
+
+    .desktop-navbar {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+}

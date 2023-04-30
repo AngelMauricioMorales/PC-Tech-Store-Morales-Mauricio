@@ -20,12 +20,17 @@
     color: var(--primaryWhite);
 }
 
+.items-list {
+    padding: 0 5%;
+}
+
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .items-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 0;
     }
 }
 
@@ -36,5 +41,17 @@
 
     .items-list-section_title {
         margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .items-list-section {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5%;
+    }
+
+    .items-list-section_container {
+        width: 66.5%;
     }
 }

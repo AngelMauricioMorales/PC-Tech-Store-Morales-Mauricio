@@ -39,3 +39,14 @@
     padding: 1% 2%;
     font-size: 0.7rem;
 }
+
+/*Mediaqueries*/
+@media screen and (min-width: 1200px) {
+    .brand {
+        order: 1;
+    }
+
+    .brand_link {
+        font-size: 1rem;
+    }
+}

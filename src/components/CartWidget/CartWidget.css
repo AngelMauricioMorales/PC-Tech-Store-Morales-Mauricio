@@ -11,6 +11,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--primaryWhite);
+    height: 100%;
 }
 
 .cart-widget_icon {
@@ -19,6 +20,8 @@
 }
 
 /*Mediaqueries*/
-@media screen and (min-width: 768px) {
-    
+@media screen and (min-width: 1200px) {
+    .cart-widget-container {
+        order: 2;
+    }
 }
