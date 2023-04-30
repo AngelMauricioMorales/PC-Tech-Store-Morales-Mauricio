@@ -36,6 +36,6 @@
 @media screen and (min-width: 996px) {
     .navbar {
         border: 3px double var(--primaryWhite);
-        width: 33.3%;
+        width: 100%;
     }
 }

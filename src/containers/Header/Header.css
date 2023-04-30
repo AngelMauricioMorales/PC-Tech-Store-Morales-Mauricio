@@ -59,10 +59,12 @@
     }
 
     .desktop-navbar {
+        background-color: red;
         display: flex;
         position: fixed;
-        width: 100%;
+        width: 33.3%;
         height: 100%;
         top: 0;
+        left: 0;
     }
 }
