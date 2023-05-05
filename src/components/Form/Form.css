@@ -68,6 +68,7 @@ input {
     visibility: hidden;
 }  
 
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .form {
         padding: 1% 5%;
@@ -82,7 +83,7 @@ input {
 @media screen and (min-width: 996px) {
     .form {
         padding: 1%;
-        max-width: 300px;
+        width: 300px;
     }
 
     .form_title {
@@ -92,5 +93,16 @@ input {
     .form_inputs-container--footer_cancel-link,
     .form_inputs-container--footer_buy-btn {
         padding: 0.5% 0%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form {
+        width: 66%;
+    }
+
+    .form_inputs-container--footer_cancel-link,
+    .form_inputs-container--footer_buy-btn {
+        width: 25%;
     }
 }

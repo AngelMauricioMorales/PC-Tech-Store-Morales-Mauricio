@@ -14,50 +14,52 @@ function ItemDetail({item}) {
         setCounter(false);
     };
 
-    return  <div className="detail-section">
-                <h2 className="detail-title">
-                    <Link to="/" className="detail-backward">⫷</Link>
-                    <span className="detail-backward--detail">Detalles</span>
-                </h2>
-                <section className="detail_item-section">
-                    <div className="detail_item-container">
-		            	<h3 className="detail_item-title">{item.name}</h3>
-                        <figure className="detail_item-figure">
-                            <img src={item.image} alt={item.description} />
-                            <figcaption className="detail_item-description">{item.description}</figcaption>
-                        </figure>
-                    </div>
-                    <div className="detail-footer">
-                        <div className="detail-footer_price-stock">
-                            <p className="detail-footer_price">
-		                    	<span className="detail-footer-price_text">Precio: </span>
-                                <span className="detail-footer-price_number">{parseFloat(item.price).toFixed(2)} u$d</span>
-		                    </p>	
-                            <p className="detail-footer_stock">
-                                <span className="detail-footer-stock_text">Stock: </span> 
-                                <span className="detail-footer-stock_number">{item.stock === 0 ? "Agotado" : item.stock}</span>
-                            </p>
+    return  <div className="detail-section-container">
+                <div className="detail-section">
+                    <h2 className="detail-title">
+                        <Link to="/" className="detail-backward">⫷</Link>
+                        <span className="detail-backward--detail">Detalles</span>
+                    </h2>
+                    <section className="detail_item-section">
+                        <div className="detail_item-container">
+		                	<h3 className="detail_item-title">{item.name}</h3>
+                            <figure className="detail_item-figure">
+                                <img src={item.image} alt={item.description} />
+                                <figcaption className="detail_item-description">{item.description}</figcaption>
+                            </figure>
                         </div>
-                        {
-                            counter   
-                            ?   
-                            <ItemCount  stock={item.stock} 
-                                        initial={1} 
-                                        addQuantity={addToCart} />  
-                            :   
-                            <div className="end-continue-container">
-                                <p className="end-continue_text">
-                                    ¡Agregado!😉 <br />
-                                    Tu producto está en el carrito.
+                        <div className="detail-footer">
+                            <div className="detail-footer_price-stock">
+                                <p className="detail-footer_price">
+		                        	<span className="detail-footer-price_text">Precio: </span>
+                                    <span className="detail-footer-price_number">{parseFloat(item.price).toFixed(2)} u$d</span>
+		                        </p>	
+                                <p className="detail-footer_stock">
+                                    <span className="detail-footer-stock_text">Stock: </span> 
+                                    <span className="detail-footer-stock_number">{item.stock === 0 ? "Agotado" : item.stock}</span>
                                 </p>
-                                <div className="end-continue_btns">
-                                    <Link to="/cart" className="end-continue_links">Finalizar compra</Link>
-                                    <Link to="/" className="end-continue_links">Seguir comprando</Link>
-                                </div>
                             </div>
-                        }
-                    </div>
-                </section>
+                            {
+                                counter   
+                                ?   
+                                <ItemCount  stock={item.stock} 
+                                            initial={1} 
+                                            addQuantity={addToCart} />  
+                                :   
+                                <div className="end-continue-container">
+                                    <p className="end-continue_text">
+                                        ¡Agregado!😉 <br />
+                                        Tu producto está en el carrito.
+                                    </p>
+                                    <div className="end-continue_btns">
+                                        <Link to="/cart" className="end-continue_links">Finalizar compra</Link>
+                                        <Link to="/" className="end-continue_links">Seguir comprando</Link>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </section>
+                </div>
             </div>
 };
 

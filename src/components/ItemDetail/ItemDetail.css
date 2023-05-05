@@ -134,3 +134,15 @@
         font-size: x-large;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .detail-section-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .detail-section {
+        padding: 0 0.5%;
+        width: 66.5%;
+    }
+}

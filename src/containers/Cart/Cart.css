@@ -78,6 +78,7 @@
     margin: 5%;
 }
 
+/*Mediaqueries*/
 @media screen and (min-width: 768px) {
     .cart-list {
         display: flex;
@@ -134,5 +135,22 @@
 
     .empty-cart_back {
         width: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cart-list-contanier {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cart-list-header {
+        width: 66.5%;
+        padding: 0.5%;
+    } 
+
+    .cart-footer-btns_clear,
+    .cart-footer-btns_continue {
+        width: 45%;
     }
 }
