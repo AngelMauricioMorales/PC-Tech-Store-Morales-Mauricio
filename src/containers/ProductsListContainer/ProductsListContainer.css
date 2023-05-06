@@ -54,4 +54,13 @@
     .items-list-section_container {
         width: 66.5%;
     }
+
+    .isLoading-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .isLoading {
+        width: 66%;
+    }
 }

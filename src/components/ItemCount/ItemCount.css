@@ -50,4 +50,9 @@
     .item-count_addToCart {
         width: 50%;
     }
+
+    .item-count_btns:hover,
+    .item-count_addToCart:hover {
+        border: 1px solid var(--primaryWhite);
+    }
 }

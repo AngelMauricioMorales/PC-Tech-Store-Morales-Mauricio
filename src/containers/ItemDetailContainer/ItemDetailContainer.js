@@ -20,7 +20,7 @@ function ItemDetailContainer() {
         	.finally(() => setLoading(false))
     }, [detailId]);
 
-	return loading ? <p className="loading">Espere...</p> : <ItemDetail item={product} />
+	return loading ? <div className="loading-container"><p className="loading">Espere...</p></div> : <ItemDetail item={product} />
 };
 
 export default ItemDetailContainer;

@@ -136,6 +136,12 @@
     .empty-cart_back {
         width: 15%;
     }
+
+    .cart-footer-btns_clear:hover,
+    .cart-footer-btns_continue:hover,
+    .empty-cart_back:hover {
+        border: 1px solid var(--primaryWhite);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -152,5 +158,14 @@
     .cart-footer-btns_clear,
     .cart-footer-btns_continue {
         width: 45%;
+    }
+
+    .empty-cart-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .empty-cart {
+        width: 66.5%;
     }
 }

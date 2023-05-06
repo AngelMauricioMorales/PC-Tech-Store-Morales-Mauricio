@@ -10,10 +10,12 @@ function Cart() {
         {   
             cartList.length === 0   
             ?
-            <div className="empty-cart">
-                <h2 className="empty-cart_title">El carrito está vacío.</h2>
-                <Link to="/" className="empty-cart_back">Ir a comprar</Link>
-            </div>   
+            <div className="empty-cart-container">
+                <div className="empty-cart">
+                    <h2 className="empty-cart_title">El carrito está vacío.</h2>
+                    <Link to="/" className="empty-cart_back">Ir a comprar</Link>
+                </div>   
+            </div>
             :   
             <section className="cart-list-contanier">
                 <div className="cart-list-header">

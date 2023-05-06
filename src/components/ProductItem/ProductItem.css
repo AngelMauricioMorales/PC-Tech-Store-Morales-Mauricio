@@ -51,4 +51,8 @@
         width: 33%;
         margin: 0.25% 0;
     }
+
+    .items-list_product:hover {
+        border: 1px solid var(--primaryWhite);
+    }
 }

@@ -133,6 +133,10 @@
     .end-continue_text {
         font-size: x-large;
     }
+
+    .end-continue_links:hover {
+        border: 1px solid var(--primaryWhite);
+    }
 }
 
 @media screen and (min-width: 1200px) {

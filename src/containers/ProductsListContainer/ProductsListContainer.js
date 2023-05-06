@@ -24,7 +24,7 @@ function ProductsListContainer() {
   	return (
 		isLoading 	
 		? 	
-		(<p className="isLoading">Cargando...</p>) 	
+		(<div className="isLoading-container"><p className="isLoading">Cargando...</p></div>) 	
 		:
 		<section id="catalogue" className="items-list-section">
 			<div className="items-list-section_container">
