@@ -36,10 +36,16 @@
 @media screen and (min-width: 996px) {
     .navbar {
         border: 3px double var(--primaryWhite);
-        width: 100%;
     }
 
     .navbar-list_item:hover {
         background-color: var(--secondaryDark);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        border: 3px double var(--primaryWhite);
+        width: 100%;
     }
 }

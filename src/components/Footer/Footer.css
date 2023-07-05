@@ -25,6 +25,7 @@
     color: var(--primaryWhite);
     font-size: small;
     background-color: var(--secondaryDark);
+    font-size: 0.7rem;
 }
 
 .footer-brand {

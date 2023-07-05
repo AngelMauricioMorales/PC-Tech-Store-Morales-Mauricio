@@ -1,27 +1,13 @@
 .form {
-    box-shadow: black 0 0 3px;
-    background-color: var(--secondaryDark);
-    border: 1px solid var(--secondaryDark);
-    border-radius: 5px;
     color: var(--primaryWhite);
     padding: 5%;
     width: 100%;
 }
 
 .form_title {
-    box-shadow: black 0 0 3px;
-    background-color: var(--secondaryDark);
-    border: 1px solid var(--secondaryDark);
-    border-radius: 5px;
+    font-size: 1.1rem;
     text-align: center;
-    padding: 1%;
-}
-
-.form_inputs-container {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 5% 0;
+    margin: 2% 0;
 }
 
 .form_inputs-container--footer {
@@ -51,22 +37,9 @@
     text-decoration: none;
 }
 
-.form_inputs-container input:required {
-    border: 1px solid red;
-}
-
-.form_inputs-container input:valid {
-    border: 1px solid var(--dollarColor);
-}
-
-input {
-    border-radius: 3px;
-    padding: 1%;
-}
-
 .form_inputs-container--footer_buy-btn:disabled {
     visibility: hidden;
-}  
+}   
 
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {

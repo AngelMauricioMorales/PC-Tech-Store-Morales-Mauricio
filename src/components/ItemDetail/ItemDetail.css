@@ -123,6 +123,10 @@
     .detail-footer_price-stock {
         box-shadow: black 0 0 2px;
     }
+
+    .end-continue_text {
+        margin-bottom: 25%;
+    }
 }
 
 @media screen and (min-width: 996px) {

@@ -1,69 +1,68 @@
 import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import "./Form.css";
+import FormInput from '../FormInput/FormInput';
 
-function Form({inputsHandler, formData, createOrder}) {
-	const [switchBoolean, setswitchBoolean] = useState(true);
+function Form({userEntries, formData, createOrder}) {
+	const [switchBoolean, setSwitchBoolean] = useState(true);
 
 	const userData = formData.userPhone !== "" && 
 					 formData.userName !== "" && 
 					 formData.userEmail !== "" && 
 					 formData.userEmailRepeated === formData.userEmail;
 
-	useEffect(() => userData ? setswitchBoolean(false) : setswitchBoolean(true), [userData]);
+	useEffect(() => userData ? setSwitchBoolean(false) : setSwitchBoolean(true), [userData]); 
 
   	return 	<form onSubmit={Form} className="form">
 				<h2 className="form_title">Completa el formulario</h2>
-				<fieldset className="form_inputs-container">
-    		  		<label 	htmlFor="userName">Nombre</label>
-    		  		<input	id="userName"
+				<FormInput	label="Nombre"
+							id="userName"
     		  		  		name="userName"
     		  		  		type="text"
-							pattern="\w[a-zA-z]+\s\w[a-zA-Z]+"
+							pattern="/^[a-zA-ZÀ-ÿ\s]{3,20}$/"
     		  		  		placeholder="Ej: Fulanito Mengano"
-    		  		  		onChange={inputsHandler}
+    		  		  		onChange={userEntries}
     		  		  		value={formData.userName}
+							error="El nombre debe contener de 3 a 20 caracteres."
+							state={formData.userName}
     		  		  		required
 							autoFocus
-    		  		/>
-				</fieldset>
-				<fieldset className="form_inputs-container">
-    		  		<label 	htmlFor="userEmail">Email</label>
-    		  		<input	id="userEmail"
-    		    			name="userEmail"
-    		    			type="email"
-    		    			pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
-    		    			placeholder="Ej: user_email@myemail.com"
-    		    			onChange={inputsHandler}
-    		    			value={formData.userEmail}
+				/>
+				<FormInput	label="Email"
+							id="userEmail"
+    		  		  		name="userEmail"
+    		  		  		type="email"
+							pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
+    		  		  		placeholder="Ej: user_email@myemail.com"
+    		  		  		onChange={userEntries}
+    		  		  		value={formData.userEmail}
+							error="El email no es válido"
     		    			required
-    		  		/>
-				</fieldset>
-				<fieldset className="form_inputs-container">
-					<label 	htmlFor="userEmailRepeated">Repita el email</label>
-    		  		<input	id="userEmailRepeated"
-    		    			name="userEmailRepeated"
-    		    			type="email"
-    		    			pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]+"
-    		    			onChange={inputsHandler}
-    		    			value={formData.userEmailRepeated}
+				/>
+				<FormInput	label="Repita el email"
+							id="userEmailRepeated"
+    		  		  		name="userEmailRepeated"
+    		  		  		type="email"
+							pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
+    		  		  		placeholder="Ej: user_email@myemail.com"
+    		  		  		onChange={userEntries}
+    		  		  		value={formData.userEmailRepeated}
+							error="Ambos correos deben coincidir."
     		    			required
-    		  		/>
-				</fieldset>
-				<fieldset className="form_inputs-container">
-    		  		<label 	htmlFor="userPhone">Teléfono</label>
-    		  		<input	id="userPhone"
-    		    			name="userPhone"
-    		    			type="tel"
-							pattern="\d*(11|15)[0-9]+"
-    		    			placeholder="Ej: 1123456789"
+				/>
+				<FormInput	label="Teléfono"
+							id="userPhone"
+    		  		  		name="userPhone"
+    		  		  		type="tel"
+							pattern="/^\d{9}$/"
+    		  		  		placeholder="Ej: 1123456789"
+    		  		  		onChange={userEntries}
+    		  		  		value={formData.userPhone}
+							error="El teléfono debe contener diez números."
 							maxLength="10"
 							minLength="10"
-    		    			onChange={inputsHandler}
-    		    			value={formData.userPhone}
     		    			required
-    		  		/>
-				</fieldset>
+				/>
 				<fieldset className="form_inputs-container--footer">
 					<Link to="/cart" className="form_inputs-container--footer_cancel-link">Cancelar</Link>
     		  		<button className="form_inputs-container--footer_buy-btn" 

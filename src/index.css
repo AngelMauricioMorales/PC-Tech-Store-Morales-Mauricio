@@ -18,7 +18,8 @@ html {
 }
 
 body {
-	font-size: 0.9rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.8rem;
 	min-height: 100vh;
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
@@ -42,4 +43,6 @@ video {
 	--primaryBlue: #0000ca;
 	--dollarColor: #008000;
 	--formBackdrops: #e2e2e260;
+	--success: #7bec7b;
+	--error: #ff0000;
 }
