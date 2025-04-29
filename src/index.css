@@ -1,0 +1,15 @@
+html {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-top: 55%;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        padding-top: 25%;
+    }
+}
