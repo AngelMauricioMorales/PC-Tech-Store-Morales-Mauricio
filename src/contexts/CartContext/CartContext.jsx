@@ -1,10 +1,10 @@
-import {useState, createContext, useContext} from 'react';
+import { useState, createContext, useContext } from 'react';
 
 const CartContext = createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
-function CartContextProvider({children}) {
+function CartContextProvider({ children }) {
     const [cartList, setCartList] = useState([]);
 
     const isInCart = newProduct => cartList.findIndex(item => item.id === newProduct.id);
@@ -28,19 +28,19 @@ function CartContextProvider({children}) {
 
     const clearCart = () => setCartList([]);
 
-    return  <CartContext.Provider value={
-                {
-                    cartList,
-                    onAddToCart,
-                    removeItem,
-                    clearCart,
-                    amountQuantity,
-                    totalPrice
-                }
-            }
-            >  
-                {children}
-            </CartContext.Provider>    
+    return <CartContext.Provider value={
+        {
+            cartList,
+            onAddToCart,
+            removeItem,
+            clearCart,
+            amountQuantity,
+            totalPrice
+        }
+    }
+    >
+        {children}
+    </CartContext.Provider>
 };
 
 export default CartContextProvider;
